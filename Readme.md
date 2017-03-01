@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Екатерина Демина](https://up.htmlacademy.ru/adaptive/10/user/255225).
-* Наставник: `Неизвестно`.
+* Наставник: [Филипп Шамсиев](https://htmlacademy.ru/profile/toolx).
 
 ---
 
