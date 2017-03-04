@@ -5,8 +5,128 @@
     <title>HTML Academy: Пинк</title>
   </head>
   <body>
-
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">Продвинутый HTML и CSS</a>».</p>
-
+    <header class="page-header page-header--index">
+      <h1 class="visually-hidden">PINK</h1>
+      <nav class="main-nav main-nav--closed main-nav--nojs">
+        <button class="main-nav__toggle" type="button">PINK</button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__items">
+            <li class="main-nav__item main-nav__item--btn-close"><a href="">PINK</a></li>
+            <li class="main-nav__item main-nav__item--active"><a>Главная</a></li>
+            <li class="main-nav__item"><a href="photo.html">Фотографии</a></li>
+            <li class="main-nav__item"><a href="form.html">Конкурс</a></li>
+            <li class="main-nav__item"><a href="">HTML ACADEMY</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="downloads">
+        <h2 class="visually-hidden">Скачать приложение</h2>
+        <button class="btn btn--downloads">Скачать приложение</button>
+        <ul class="downloads__items">
+          <li class="downloads__item"><a href="">iOS</a></li>
+          <li class="downloads__item"><a href="">Android</a></li>
+          <li class="downloads__item"><a href="">Windows</a></li>
+        </ul>
+        <p class="downloads__description">Доступно для iPhone, iPad, Android, Windows Phone, Windows 8</p>
+      </section>
+      <section class="promo">
+        <h2 class="visually-hidden">Промо</h2>
+        <p class="promo__text">Устали от серости мегаполиса?</p>
+        <p class="promo__text">Нам есть что вам предложить!</p>
+      </section>
+      <section class="product">
+        <h2 class="visually-hidden">Pink</h2>
+        <dl class="product__items">
+          <dt class="product__item-header">Поднимает настроение</dt>
+          <dd class="product__item-description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</dd>
+          <dt class="product__item-header">Меняет мир вокруг</dt>
+          <dd class="product__item-description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</dd>
+          <dt class="product__item-header">Заводит новых друзей</dt>
+          <dd class="product__item-description">Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых</dd>
+        </dl>
+        <img class="product__img" src="http://placehold.it/150x100" width="150" height="100" alt="PINK">
+      </section>
+      <section class="reviews">
+        <h2 class="visually-hidden">Отзывы</h2>
+        <div class="reviews-wrapper slider">
+          <input class="slider__input" type="radio" name="reviews" id="reviews-input-1" checked>
+          <input class="slider__input" type="radio" name="reviews" id="reviews-input-2">
+          <input class="slider__input" type="radio" name="reviews" id="reviews-input-3">
+          <div class="reviews__items">
+            <blockquote class="reviews__item slider__item">
+              <cite class="reviews__auhor-name">Николай Петров</cite>
+              <p class="reviews__author-text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+            </blockquote>
+          </div>
+        </div>
+      </section>
+      <section class="price">
+        <h2 class="visually-hidden">Прайс</h2>
+        <div class="price-wrapper slider">
+          <input class="slider__input" type="radio" name="price" id="price-input-1">
+          <input class="slider__input" type="radio" name="price" id="price-input-2" checked>
+          <input class="slider__input" type="radio" name="price" id="price-input-3">
+          <div class="price__items">
+            <div class="price__item">
+              <div class="price__item-header">
+                База <span class="price__item-price">1,99 USD</span>
+              </div>
+              <div class="price__item-content price__item-content--yes">
+                Розовый фильтр
+              </div>
+              <div class="price__item-content price__item-content--no">
+                Смайлики
+              </div>
+              <div class="price__item-content price__item-content--no">
+                Комментарии
+              </div>
+            </div>
+            <div class="price__item slider">
+              <div class="price__item-header price__item-header--hit">
+                Стандарт <span class="price__item-price">3,99 USD</span>
+              </div>
+              <div class="price__item-content price__item-content--yes">
+                Розовый фильтр
+              </div>
+              <div class="price__item-content price__item-content--yes">
+                Смайлики
+              </div>
+              <div class="price__item-content price__item-content--no">
+                Комментарии
+              </div>
+            </div>
+            <div class="price__item">
+              <div class="price__item-header">
+                Анлим <span class="price__item-price">9,99 USD</span>
+              </div>
+              <div class="price__item-content price__item-content--yes">
+                Розовый фильтр
+              </div>
+              <div class="price__item-content price__item-content--yes">
+                Смайлики
+              </div>
+              <div class="price__item-content price__item-content--yes">
+                Комментарии
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="contacts">
+        <h2 class="visually-hidden">Контакты</h2>
+        <p class="contacts__description">Остались вопросы? Свяжитесь с нами!</p>
+        <dl class="contacts__items">
+          <dt class="contacts__item-name">Звоните:</dt>
+          <dd class="contacts__item-value"><a href="tel:+78125556666">+7 (812) 555-66-66</a></dd>
+          <dt class="contacts__item-name">Пишите:</dt>
+          <dd class="contacts__item-value"><a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a></dd>
+          <dt class="contacts__item-name">Приезжайте в гости:</dt>
+          <dd class="contacts__item-value">ул. Большая Конюшенная, 19/8</dd>
+        </dl>
+        <div class="map"></div>
+      </section>
+    </main>
   </body>
 </html>
