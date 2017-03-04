@@ -6,11 +6,10 @@
   </head>
   <body>
     <header class="page-header page-header--form">
+      <img class="header-logo" src="http://placehold.it/150x100" width="150" height="100" alt="PINK">
       <nav class="main-nav main-nav--closed main-nav--nojs">
-        <button class="main-nav__toggle" type="button">PINK</button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__items">
-            <li class="main-nav__item main-nav__item--btn-close"><a href="">PINK</a></li>
             <li class="main-nav__item main-nav__item--active"><a href="index.html">Главная</a></li>
             <li class="main-nav__item"><a href="photo.html">Фотографии</a></li>
             <li class="main-nav__item"><a>Конкурс</a></li>
@@ -18,9 +17,10 @@
           </ul>
         </div>
       </nav>
+      <button class="main-nav__toggle" type="button">PINK</button>
       <h1 class="main-header">Конкурс на самое безбашенное путешествие с Пинк</h1>
     </header>
-    <main class="page-content">
+    <main>
       <section class="page-description">
         <h2 class="visually-hidden">Конкурс</h2>
         <p class="page-description__text">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните форму ниже:</p>
@@ -29,65 +29,102 @@
         <h2 class="visually-hidden">Форма</h2>
         <form class="main-form" name="pink-form" action="https://echo.htmlacademy.ru/" method="post" >
           <fieldset class="main-form__fieldgroup main-form__fieldgroup--white">
-            <label class="main-form__label-field" for="input-surname">Фамилия</label>
-            <input class="main-form__input-text" type="text" name="input-surname" id="input-surname" value="" placeholder="Фамилия *" required>
-            <label class="main-form__label-field" for="input-name">Имя</label>
-            <input class="main-form__input-text" type="text" name="input-name" id="input-name" value="" placeholder="Имя *" required>
-            <label class="main-form__label-field" for="input-secondname">Отчество</label>
-            <input class="main-form__input-text" type="text" name="input-secondname" id="input-secondname" value="" placeholder="Отчество *" required>
+            <div class="main-form__fiedgroup-wrapper">
+              <div class="main-form__fields-wrapper">
+                <label class="main-form__label-field" for="input-surname">Фамилия</label>
+                <input class="main-form__input-text" type="text" name="input-surname" id="input-surname" placeholder="Укажите фамилию *" required>
+              </div>
+              <div class="main-form__fields-wrapper">
+                <label class="main-form__label-field" for="input-name">Имя</label>
+                <input class="main-form__input-text" type="text" name="input-name" id="input-name" placeholder="Введите ваше имя *" required>
+              </div>
+              <div class="main-form__fields-wrapper">
+                <label class="main-form__label-field" for="input-secondname">Отчество</label>
+                <input class="main-form__input-text" type="text" name="input-secondname" id="input-secondname" placeholder="Ну и отчество тоже *" required>
+              </div>
+            </div>
           </fieldset>
           <fieldset class="main-form__fieldgroup main-form__fieldgroup--grey">
-            <legend class="main-form__title-group">Ваши безбашенные достижения в путешествии</legend>
-            <input class="main-form__input-checkbox" type="checkbox" name="checkbox-selfie" id="checkbox-selfie" checked>
-            <label class="main-form__label-check" for="checkbox-selfie">Сделал селфи с акулой</label>
-            <input class="main-form__input-checkbox" type="checkbox" name="checkbox-beach" id="checkbox-beach" checked>
-            <label class="main-form__label-check" for="checkbox-beach">Обгорел на пляже</label>
-            <input class="main-form__input-checkbox" type="checkbox" name="checkbox-chucknorris" id="checkbox-chucknorris">
-            <label class="main-form__label-check" for="checkbox-chucknorris">Видел Чака Норриса</label>
-            <input class="main-form__input-checkbox" type="checkbox" name="checkbox-souvenir" id="checkbox-souvenir">
-            <label class="main-form__label-check" for="checkbox-souvenir">Накупил сувениров</label>
-            <input class="main-form__input-checkbox" type="checkbox" name="checkbox-tower" id="checkbox-tower" checked>
-            <label class="main-form__label-check" for="checkbox-tower">Удержал башню</label>
-            <input class="main-form__input-checkbox" type="checkbox" name="checkbox-hotel" id="checkbox-hotel">
-            <label class="main-form__label-check" for="checkbox-hotel">Разгромил отель</label>
+            <div class="main-form__fiedgroup-wrapper">
+              <p class="main-form__title-group">Ваши безбашенные достижения в путешествии</p>
+              <div class="main-form__fields-wrapper">
+                <input class="main-form__input-btn main-form__input-btn--checkbox" type="checkbox" name="checkbox-selfie" id="checkbox-selfie" checked>
+                <label class="main-form__label-check" for="checkbox-selfie">Сделал селфи с акулой</label>
+              </div>
+              <div class="main-form__fields-wrapper">
+                <input class="main-form__input-btn main-form__input-btn--checkbox" type="checkbox" name="checkbox-beach" id="checkbox-beach" checked>
+                <label class="main-form__label-check" for="checkbox-beach">Обгорел на пляже</label>
+              </div>
+              <div class="main-form__fields-wrapper">
+                <input class="main-form__input-btn main-form__input-btn--checkbox" type="checkbox" name="checkbox-chucknorris" id="checkbox-chucknorris">
+                <label class="main-form__label-check" for="checkbox-chucknorris">Видел Чака Норриса</label>
+              </div>
+              <div class="main-form__fields-wrapper">
+                <input class="main-form__input-btn main-form__input-btn--checkbox" type="checkbox" name="checkbox-souvenir" id="checkbox-souvenir">
+                <label class="main-form__label-check" for="checkbox-souvenir">Накупил сувениров</label>
+              </div>
+              <div class="main-form__fields-wrapper">
+                <input class="main-form__input-btn main-form__input-btn--checkbox" type="checkbox" name="checkbox-tower" id="checkbox-tower" checked>
+                <label class="main-form__label-check" for="checkbox-tower">Удержал башню</label>
+              </div>
+              <div class="main-form__fields-wrapper">
+                <input class="main-form__input-btn main-form__input-btn--checkbox" type="checkbox" name="checkbox-hotel" id="checkbox-hotel">
+                <label class="main-form__label-check" for="checkbox-hotel">Разгромил отель</label>
+              </div>
+            </div>
           </fieldset>
           <fieldset class="main-form__fieldgroup main-form__fieldgroup--white">
-            <label class="main-form__label-field" for="input-tel">Номер телефона</label>
-            <input class="main-form__input-text" type="tel" name="input-tel" id="input-tel" value="" placeholder="Номер, пожалуйста" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}">
-            <label class="main-form__label-field" for="input-email">Адрес почты</label>
-            <input class="main-form__input-text" type="email" name="input-email" id="input-email" value="" placeholder="Введите почту *" required>
+            <div class="main-form__fiedgroup-wrapper">
+              <div class="main-form__fields-wrapper">
+                <label class="main-form__label-field" for="input-tel">Номер телефона</label>
+                <input class="main-form__input-text" type="tel" name="input-tel" id="input-tel" value="" placeholder="Номер, пожалуйста" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}">
+              </div>
+              <div class="main-form__fields-wrapper">
+                <label class="main-form__label-field" for="input-email">Адрес почты</label>
+                <input class="main-form__input-text" type="email" name="input-email" id="input-email" value="" placeholder="Введите почту *" required>
+              </div>
+            </div>
           </fieldset>
           <fieldset class="main-form__fieldgroup main-form__fieldgroup--grey">
-            <legend class="main-form__title-group">С каким приложением путешествовали?</legend>
-            <input class="main-form__input-radio" type="radio" name="pinkapp" id="pinkapp-ios" checked>
-            <label class="main-form__label-check" for="pinkapp-ios">Pink для iOS</label>
-            <input class="main-form__input-radio" type="radio" name="pinkapp" id="pinkapp-android" checked>
-            <label class="main-form__label-check" for="pinkapp-android">Pink на Android</label>
-            <input class="main-form__input-radio" type="radio" name="pinkapp" id="pinkapp-windows" checked>
-            <label class="main-form__label-check" for="pinkapp-windows">Windows Phone</label>
+            <div class="main-form__fiedgroup-wrapper">
+              <p class="main-form__title-group">С каким приложением путешествовали?</p>
+              <div class="main-form__fields-wrapper">
+                <input class="main-form__input-btn main-form__input-btn--radio" type="radio" name="pinkapp" id="pinkapp-ios" checked>
+                <label class="main-form__label-check" for="pinkapp-ios">Pink для iOS</label>
+              </div>
+              <div class="main-form__fields-wrapper">
+                <input class="main-form__input-btn main-form__input-btn--radio" type="radio" name="pinkapp" id="pinkapp-android" checked>
+                <label class="main-form__label-check" for="pinkapp-android">Pink на Android</label>
+              </div>
+              <div class="main-form__fields-wrapper">
+                <input class="main-form__input-btn main-form__input-btn--radio" type="radio" name="pinkapp" id="pinkapp-windows" checked>
+                <label class="main-form__label-check" for="pinkapp-windows">Windows Phone</label>
+              </div>
+            </div>
           </fieldset>
           <fieldset class="main-form__fieldgroup main-form__fieldgroup--white">
-            <label class="main-form__label-field" for="emotiontext">Опишите свои эмоции</label>
-            <textarea class="main-form__message" name="emotiontext" id="emotiontext" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+            <div class="main-form__fiedgroup-wrapper">
+              <label class="main-form__label-field" for="emotiontext">Опишите свои эмоции</label>
+              <textarea class="main-form__message" name="emotiontext" id="emotiontext" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+            </div>
           </fieldset>
           <button class="form-btn" type="submit">Отправить форму</button>
-          <!--          можно красную звездочку через псведоэлемент before сделать чтобы не усложнять верстку?-->
-          <p class="main-form__required">— обязательные поля</p>
+          <p class="main-form__required">&#42; &#8211; обязательные поля</p>
         </form>
       </section>
     </main>
     <footer class="page-foter">
-      <img class="footer-logo" src="http://placehold.it/150x100" width="150" height="100" alt="Лого Pink">
-      <p class="page-footer__social">
-        <span class="social-links">
+      <a class="footer-logo">Pink</a>
+      <div class="page-footer__social">
+        <div class="social-links">
           <a class="social-link social-link--tw" href="">Twitter</a>
           <a class="social-link social-link--fb" href="">Facebook</a>
           <a class="social-link social-link--yt" href="">YouTube</a>
-        </span>
-      </p>
+        </div>
+      </div>
       <p class="page-footer__copyright">
         Разработано:
-        <img class="footer-academy-logo" src="http://placehold.it/150x100" width="150" height="100" alt="HTML Academy">
+        <a class="footer-academy-logo">HTML Academy</a>
       </p>
     </footer>
     <div class="modal-popup popup-error">

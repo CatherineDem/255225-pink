@@ -7,11 +7,10 @@
   <body>
     <header class="page-header page-header--index">
       <h1 class="visually-hidden">PINK</h1>
+      <img class="header-logo" src="http://placehold.it/150x100" width="150" height="100" alt="PINK">
       <nav class="main-nav main-nav--closed main-nav--nojs">
-        <button class="main-nav__toggle" type="button">PINK</button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__items">
-            <li class="main-nav__item main-nav__item--btn-close"><a href="">PINK</a></li>
             <li class="main-nav__item main-nav__item--active"><a>Главная</a></li>
             <li class="main-nav__item"><a href="photo.html">Фотографии</a></li>
             <li class="main-nav__item"><a href="form.html">Конкурс</a></li>
@@ -19,11 +18,12 @@
           </ul>
         </div>
       </nav>
+      <button class="main-nav__toggle" type="button">PINK</button>
     </header>
     <main>
       <section class="downloads">
         <h2 class="visually-hidden">Скачать приложение</h2>
-        <button class="btn btn--downloads">Скачать приложение</button>
+        <a class="btn btn--downloads" href="">Скачать приложение</a>
         <ul class="downloads__items">
           <li class="downloads__item"><a href="">iOS</a></li>
           <li class="downloads__item"><a href="">Android</a></li>
@@ -38,15 +38,20 @@
       </section>
       <section class="product">
         <h2 class="visually-hidden">Pink</h2>
-        <dl class="product__items">
-          <dt class="product__item-header">Поднимает настроение</dt>
-          <dd class="product__item-description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</dd>
-          <dt class="product__item-header">Меняет мир вокруг</dt>
-          <dd class="product__item-description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</dd>
-          <dt class="product__item-header">Заводит новых друзей</dt>
-          <dd class="product__item-description">Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых</dd>
-        </dl>
-        <img class="product__img" src="http://placehold.it/150x100" width="150" height="100" alt="PINK">
+        <ul class="product__items">
+          <li class="product__item">
+            <p class="product__item-title">Поднимает настроение</p>
+            <p class="product__item-description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+          </li>
+          <li class="product__item">
+            <p class="product__item-title">Меняет мир вокруг</p>
+            <p class="product__item-description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+          </li>
+          <li class="product__item">
+            <p class="product__item-title">Заводит новых друзей</p>
+            <p class="product__item-description">Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых</p>
+          </li>
+        </ul>
       </section>
       <section class="reviews">
         <h2 class="visually-hidden">Отзывы</h2>
@@ -60,7 +65,13 @@
               <p class="reviews__author-text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
             </blockquote>
           </div>
+          <div class="slider__buttons-wrapper">
+            <label class="slider__btn slider__btn--checked" for="reviews-input-1"></label>
+            <label class="slider__btn" for="reviews-input-2"></label>
+            <label class="slider__btn" for="reviews-input-3"></label>
+          </div>
         </div>
+
       </section>
       <section class="price">
         <h2 class="visually-hidden">Прайс</h2>
@@ -68,48 +79,35 @@
           <input class="slider__input" type="radio" name="price" id="price-input-1">
           <input class="slider__input" type="radio" name="price" id="price-input-2" checked>
           <input class="slider__input" type="radio" name="price" id="price-input-3">
-          <div class="price__items">
-            <div class="price__item">
-              <div class="price__item-header">
-                База <span class="price__item-price">1,99 USD</span>
-              </div>
-              <div class="price__item-content price__item-content--yes">
-                Розовый фильтр
-              </div>
-              <div class="price__item-content price__item-content--no">
-                Смайлики
-              </div>
-              <div class="price__item-content price__item-content--no">
-                Комментарии
-              </div>
+          <div class="price-table">
+            <div class="price-table__column-group">
+              <div class="price-table__column"></div>
+              <div class="price-table__column"></div>
+              <div class="price-table__column"></div>
             </div>
-            <div class="price__item slider">
-              <div class="price__item-header price__item-header--hit">
-                Стандарт <span class="price__item-price">3,99 USD</span>
-              </div>
-              <div class="price__item-content price__item-content--yes">
-                Розовый фильтр
-              </div>
-              <div class="price__item-content price__item-content--yes">
-                Смайлики
-              </div>
-              <div class="price__item-content price__item-content--no">
-                Комментарии
-              </div>
-            </div>
-            <div class="price__item">
-              <div class="price__item-header">
-                Анлим <span class="price__item-price">9,99 USD</span>
-              </div>
-              <div class="price__item-content price__item-content--yes">
-                Розовый фильтр
-              </div>
-              <div class="price__item-content price__item-content--yes">
-                Смайлики
-              </div>
-              <div class="price__item-content price__item-content--yes">
-                Комментарии
-              </div>
+            <header class="price-table__header">
+              <ul class="price-table__header-row">
+                <li class="price-table__header-cell">База <span class="price-table__price">1,99 USD</span></li>
+                <li class="price-table__header-cell price-table__header-cell--hit">Стандарт <span class="price-table__price">3,99 USD</span></li>
+                <li class="price-table__header-cell">Анлим <span class="price-table__price">9,99 USD</span></li>
+              </ul>
+            </header>
+            <div class="price-table__content">
+              <ul class="price-table__content-row">
+                <li class="price-table__content-cell price-table__content-cell--yes">Розовый фильтр</li>
+                <li class="price-table__content-cell price-table__content-cell--yes">Розовый фильтр</li>
+                <li class="price-table__content-cell price-table__content-cell--yes">Розовый фильтр</li>
+              </ul>
+              <ul class="price-table__content-row">
+                <li class="price-table__content-cell price-table__content-cell--no">Смайлики</li>
+                <li class="price-table__content-cell price-table__content-cell--yes">Смайлики</li>
+                <li class="price-table__content-cell price-table__content-cell--yes">Смайлики</li>
+              </ul>
+              <ul class="price-table__content-row">
+                <li class="price-table__content-cell price-table__content-cell--no">Комментарии</li>
+                <li class="price-table__content-cell price-table__content-cell--no">Комментарии</li>
+                <li class="price-table__content-cell price-table__content-cell--yes">Комментарии</li>
+              </ul>
             </div>
           </div>
         </div>
@@ -117,14 +115,20 @@
       <section class="contacts">
         <h2 class="visually-hidden">Контакты</h2>
         <p class="contacts__description">Остались вопросы? Свяжитесь с нами!</p>
-        <dl class="contacts__items">
-          <dt class="contacts__item-name">Звоните:</dt>
-          <dd class="contacts__item-value"><a href="tel:+78125556666">+7 (812) 555-66-66</a></dd>
-          <dt class="contacts__item-name">Пишите:</dt>
-          <dd class="contacts__item-value"><a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a></dd>
-          <dt class="contacts__item-name">Приезжайте в гости:</dt>
-          <dd class="contacts__item-value">ул. Большая Конюшенная, 19/8</dd>
-        </dl>
+        <ul class="contacts__items">
+          <li class="contacts__item">
+            <p class="contacts__item-title">Звоните:</p>
+            <p class="contacts__item-description"><a href="tel:+78125556666">+7 (812) 555-66-66</a></p>
+          </li>
+          <li class="contacts__item">
+            <p class="contacts__item-title">Пишите:</p>
+            <p class="contacts__item-description"><a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a></p>
+          </li>
+          <li class="contacts__item">
+            <p class="contacts__item-title">Приезжайте в гости:</p>
+            <p class="contacts__item-description">ул. Большая Конюшенная, 19/8</p>
+          </li>
+        </ul>
         <div class="map"></div>
       </section>
     </main>
