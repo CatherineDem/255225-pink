@@ -7,7 +7,9 @@
   <body>
     <header class="page-header page-header--index">
       <h1 class="visually-hidden">PINK</h1>
-      <img class="header-logo" src="http://placehold.it/150x100" width="150" height="100" alt="PINK">
+      <a class="logo-link">
+        <img class="header-logo" src="http://placehold.it/150x100" width="150" height="100" alt="PINK">
+      </a>
       <nav class="main-nav main-nav--closed main-nav--nojs">
         <div class="main-nav__wrapper">
           <ul class="main-nav__items">
@@ -18,7 +20,7 @@
           </ul>
         </div>
       </nav>
-      <button class="main-nav__toggle" type="button">PINK</button>
+      <button class="main-nav__toggle" type="button" aria-label="Закрыть"></button>
     </header>
     <main>
       <section class="downloads">
@@ -55,7 +57,7 @@
       </section>
       <section class="reviews">
         <h2 class="visually-hidden">Отзывы</h2>
-        <div class="reviews-wrapper slider">
+        <div class="reviews__wrapper slider">
           <input class="slider__input" type="radio" name="reviews" id="reviews-input-1" checked>
           <input class="slider__input" type="radio" name="reviews" id="reviews-input-2">
           <input class="slider__input" type="radio" name="reviews" id="reviews-input-3">
@@ -75,7 +77,7 @@
       </section>
       <section class="price">
         <h2 class="visually-hidden">Прайс</h2>
-        <div class="price-wrapper slider">
+        <div class="price__wrapper slider">
           <input class="slider__input" type="radio" name="price" id="price-input-1">
           <input class="slider__input" type="radio" name="price" id="price-input-2" checked>
           <input class="slider__input" type="radio" name="price" id="price-input-3">
@@ -109,6 +111,11 @@
                 <li class="price-table__content-cell price-table__content-cell--yes">Комментарии</li>
               </ul>
             </div>
+          </div>
+          <div class="slider__buttons-wrapper">
+            <label class="slider__btn" for="price-input-1"></label>
+            <label class="slider__btn slider__btn--checked" for="price-input-2"></label>
+            <label class="slider__btn" for="price-input-3"></label>
           </div>
         </div>
       </section>
