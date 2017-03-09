@@ -1,0 +1,32 @@
+.panorama {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 20px;
+  position: relative;
+
+  &::before {
+    content: 'панорама дня';
+    position: absolute;
+    top: 0;
+    left: 160px;
+    padding: 6px 20px;
+    font-size: 12px;
+    line-height: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: @text-color-white;
+    background-color: @text-color-rose;
+    z-index: 2;
+  }
+
+  img {
+    display: block;
+    padding: 0;
+    margin: 0;
+  }
+}
+
+.panorama__wrapper {
+  padding: 0 21px;
+  margin: 0;
+}

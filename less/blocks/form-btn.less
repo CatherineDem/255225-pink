@@ -1,0 +1,31 @@
+@color-btn-green: #2aab6d;
+
+.form-btn {
+  display: block;
+  margin: 0 auto;
+  width: 280px;
+  height: 64px;
+  box-sizing: border-box;
+  padding: 17px;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  color: @text-color-white;
+  background-color: @color-btn-green;
+  border: none;
+  border-radius: 4px;
+
+  &:hover {
+    background-color: darken(@color-btn-green, 5);
+  }
+
+  &:active {
+    color: fade(@text-color-white, 30);
+  }
+
+  &:disabled {
+    background-color: @table-border-color;
+  }
+}
