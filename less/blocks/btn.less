@@ -1,0 +1,61 @@
+.btn {
+  display: block;
+  box-sizing: border-box;
+  width: 280px;
+  padding: 16px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 18px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 40px;
+
+  &--downloads {
+    color: @text-color-white;
+    border: 3px solid #ffffff;
+
+    &:hover {
+      color: @text-color-rose;
+      background-color: #ffffff;
+    }
+
+    &:active {
+      color: fade(@text-color-rose, 30);
+      background-color: #ffffff;
+    }
+  }
+
+  &--post {
+    color: @text-color-rose;
+    border: 3px solid @text-color-rose;
+    background-color: transparent;
+
+    &:hover {
+      color: @text-color-white;
+      background-color: @text-color-rose;
+    }
+
+    &:active {
+      color: fade(@text-color-white, 30);
+    }
+  }
+
+  &--cancel {
+    color: fade(@text-color-main, 10);
+    border: 3px solid fade(@text-color-main, 10);
+    background-color: transparent;
+
+    &:hover {
+      color: fade(@text-color-main, 30);
+      border: 3px solid fade(@text-color-main, 30);
+    }
+
+    &:active {
+      color: fade(@text-color-white, 30);
+      border: 3px solid fade(@text-color-main, 0);
+      background-color: fade(@text-color-main, 30);
+    }
+  }
+}

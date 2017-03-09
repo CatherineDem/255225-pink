@@ -1,0 +1,60 @@
+.main-nav {
+  background-color: @bg-color-nav;
+}
+
+.main-nav__items {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  border-bottom: 1px solid #000000;
+}
+
+.main-nav__item {
+  text-align: center;
+  box-shadow:
+    0 -1px 0 0 #000000,
+    inset 0 1px 0 0 rgba(255, 255, 255, 0.15);
+
+  a {
+    display: block;
+    padding: 16px 16px;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 32px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: @text-color-white;
+    cursor: pointer;
+
+    &:hover {
+      color: @text-color-rose;
+    }
+
+    &:active {
+      color: fade(@text-color-rose, 30);
+    }
+  }
+  /* не для mobile pink
+    &--active {
+      text-decoration: underline;
+      color: #ffffff;
+
+      &:hover {
+        color: @text-color-rose;
+        cursor: pointer;
+      }
+    }
+  */
+}
+
+.main-nav__toggle {
+  width: 100%;
+  min-height: 70px;
+  background-color: fade(@bg-color-nav,30%);
+  border: none;
+}
+
+.main-nav--closed + .main-nav__toggle {
+  background-color: @bg-color-nav;
+}

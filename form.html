@@ -2,7 +2,8 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Пинк - form</title>
+    <title>HTML Academy: Пинк - Конкурс</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="page-header page-header--form">
@@ -12,9 +13,9 @@
       <nav class="main-nav main-nav--closed main-nav--nojs">
         <div class="main-nav__wrapper">
           <ul class="main-nav__items">
-            <li class="main-nav__item main-nav__item--active"><a href="index.html">Главная</a></li>
+            <li class="main-nav__item"><a href="index.html">Главная</a></li>
             <li class="main-nav__item"><a href="photo.html">Фотографии</a></li>
-            <li class="main-nav__item"><a>Конкурс</a></li>
+            <li class="main-nav__item main-nav__item--active"><a>Конкурс</a></li>
             <li class="main-nav__item"><a href="">HTML ACADEMY</a></li>
           </ul>
         </div>
@@ -25,24 +26,24 @@
     <main>
       <section class="page-description">
         <h2 class="visually-hidden">Конкурс</h2>
-        <p class="page-description__text">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните форму ниже:</p>
+        <p class="page-description__text">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</p>
       </section>
       <section class="page-form">
         <h2 class="visually-hidden">Форма</h2>
         <form class="main-form" name="pink-form" action="https://echo.htmlacademy.ru/" method="post" >
-          <fieldset class="fieldgroup fieldgroup--white">
+          <fieldset class="fieldgroup">
             <div class="fieldgroup-wrapper">
               <div class="field">
-                <label class="field__label" for="input-surname">Фамилия</label>
+                <label class="field__label" for="input-surname">Фамилия:</label>
                 <input class="field__input-text" type="text" name="input-surname" id="input-surname" placeholder="Укажите фамилию *" required>
               </div>
               <div class="field">
-                <label class="field__label" for="input-name">Имя</label>
+                <label class="field__label" for="input-name">Имя:</label>
                 <input class="field__input-text" type="text" name="input-name" id="input-name" placeholder="Введите ваше имя *" required>
               </div>
               <div class="field">
-                <label class="field__label" for="input-secondname">Отчество</label>
-                <input class="field__input-text" type="text" name="input-secondname" id="input-secondname" placeholder="Ну и отчество тоже *" required>
+                <label class="field__label" for="input-secondname">Отчество:</label>
+                <input class="field__input-text" type="text" name="input-secondname" id="input-secondname" placeholder="Ну и отчество тоже">
               </div>
             </div>
           </fieldset>
@@ -75,7 +76,7 @@
               </div>
             </div>
           </fieldset>
-          <fieldset class="fieldgroup fieldgroup--white">
+          <fieldset class="fieldgroup">
             <div class="fieldgroup-wrapper">
               <div class="field">
                 <label class="field__label" for="input-tel">Номер телефона</label>
@@ -104,14 +105,14 @@
               </div>
             </div>
           </fieldset>
-          <fieldset class="fieldgroup fieldgroup--white">
+          <fieldset class="fieldgroup">
             <div class="fieldgroup-wrapper">
               <p class="fieldgroup__title">Опишите свои эмоции</p>
               <textarea class="field__message" name="emotiontext" id="emotiontext" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
             </div>
           </fieldset>
           <button class="form-btn" type="submit">Отправить форму</button>
-          <p class="main-form__required">&#42; &#8211; обязательные поля</p>
+          <p class="main-form__required"><span>&#42;</span> &#8211; обязательные поля</p>
         </form>
       </section>
     </main>
@@ -136,7 +137,7 @@
     </div>
     <div class="modal-popup popup-success">
       <h2 class="modal-popup__header">Ваша заявка отправлена</h2>
-      <p class="modal-popup__message">Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее и
+      <p class="modal-popup__message">Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее и<br>
         оповестим вас.</p>
       <div class="modal-popup__btn-wrapper modal-popup__btn-wrapper--grey">
         <button class="form-btn" type="button">Закрыть окно</button>

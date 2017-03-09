@@ -1,0 +1,29 @@
+@fontRegular: 'OpenSans';
+@fontBold: '@{fontRegular}Bold';
+@fontLight: '@{fontRegular}Light';
+
+.font(@fontName; @urlName: @fontName; @weight: normal; @style: normal) {
+  font-family: '@{fontName}';
+  src: url('/fonts/@{urlName}.woff') format('woff'),
+    url('/fonts/@{urlName}.woff') format('woff2');
+  font-weight: @weight;
+  font-style: @style;
+}
+
+@font-face {
+  .font(@fontRegular);
+}
+
+@font-face {
+  .font(@fontRegular; @fontBold; bold);
+}
+
+@font-face {
+  .font(@fontRegular; @fontLight; 300);
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: @fontRegular, sans-serif;
+}
