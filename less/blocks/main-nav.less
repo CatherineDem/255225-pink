@@ -1,5 +1,42 @@
+.main-nav__container {
+  position: absolute;
+  width: 100%;
+  z-index: 20;  
+}
+
 .main-nav {
+  width: 100%;
   background-color: @bg-color-nav;
+    
+  @media @desktop-widths {
+    background-color: fade(@text-color-black, 30);  
+  }
+  
+  &--closed {
+    display:none;
+    
+    @media @desktop-widths {
+      display: block;
+    }
+  }
+  
+  &--closed + .main-nav__toggle {
+    background-color: fade(@text-color-black, 30);
+    
+    @media @desktop-widths {
+      display: none; 
+    }
+  } 
+}
+
+.main-nav__wrapper {
+  width: 100%;
+      
+  @media @desktop-widths {
+    max-width: 625px;
+    margin-left: auto;
+    margin-right: 130px;
+  }
 }
 
 .main-nav__items {
@@ -7,6 +44,12 @@
   margin: 0;
   list-style: none;
   border-bottom: 1px solid #000000;
+  
+  @media @desktop-widths {
+    display: flex;
+    justify-content: space-between;
+    border: none;
+  }
 }
 
 .main-nav__item {
@@ -34,9 +77,17 @@
     &:active {
       color: fade(@text-color-rose, 30);
     }
+    
+    @media @desktop-widths {
+      font-weight: normal;
+      text-transform: none;
+      padding: 39px 0;
+    }
   }
-  /* не для mobile pink
-    &--active {
+  
+  &--active {
+    
+    @media @desktop-widths {
       text-decoration: underline;
       color: #ffffff;
 
@@ -45,16 +96,21 @@
         cursor: pointer;
       }
     }
-  */
+  }
+  
+  @media @desktop-widths {
+    box-shadow: none;
+  }
 }
 
 .main-nav__toggle {
   width: 100%;
   min-height: 70px;
-  background-color: fade(@bg-color-nav,30%);
+  background-color: @bg-color-nav;
   border: none;
+  
+  @media @desktop-widths {
+    display: none; 
+  }
 }
 
-.main-nav--closed + .main-nav__toggle {
-  background-color: @bg-color-nav;
-}

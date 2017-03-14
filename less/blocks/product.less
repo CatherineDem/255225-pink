@@ -4,27 +4,93 @@
   background-color: @bg-color-grey;
   background-image: url('/img/iphone-screen-mobile@1x.png');
   background-repeat: no-repeat;
-  background-position: center bottom;
+  background-position: center bottom -40px;
+  
+  @media @tablet-widths {
+    min-height: 485px;
+    padding: 0;
+    padding-top: 80px;
+    background-size: 271px auto;
+    background-position: left 40px bottom -60px;
+  }
+  
+  @media @desktop-widths {
+    padding-bottom: 68px;
+    background-image: none;
+  }
 }
 
 .product__items {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
   padding: 0;
   margin: 0;
+  margin-bottom: 20px;
   list-style: none;
+  
+  @media @tablet-widths {
+    width: 311px;
+    margin-left: auto;
+    margin-right: 70px;
+    margin-top: 30px;
+  }
+  
+  @media @desktop-widths {
+    width: 90%;
+    flex-direction: row;
+    margin: 0 auto;
+  }
 }
 
 .product__item {
-  margin-bottom: 38px;
+  position: relative;
   line-height: 24px;
   text-align: center;
+  
+  &::before {
+     content: '';
+     
+     @media @desktop-widths {
+       position: absolute;
+       top: 0;
+       left: -17px;
+       display: block;
+       width: 290px;
+       height: 308px;
+       margin: 0 auto;
+       background-color: @text-color-rose;
+     }
+  }
+  
+  @media @tablet-widths {
+    text-align: left;
+  }
+  
+  @media @desktop-widths {
+    max-width: 243px;
+    padding-top: 310px;
+    line-height: 30px;
+    text-align: center;
+  }  
 }
 
 .product__item-title {
   font-size: 18px;
   font-weight: bold;
+  
+  @media @desktop-widths {
+    font-size: 30px;
+  }
 }
 
 .product__item-description {
   font-size: 14px;
+  line-height: 24px;
   font-weight: normal;
+  
+  @media @desktop-widths {
+    font-size: 18px;
+    line-height: 30px;
+  }
 }

@@ -1,15 +1,33 @@
 .page-header{
-  min-height: 462px;
+  position: relative;
+  min-height: 464px;
   color: @text-color-white;
   background-color: @bg-color-header;
   background-image: url('/img/bg-back-mobile@1x.jpg');
   background-repeat: no-repeat;
   background-position: top center;
+  background-size: cover;
 
   &--index {
     background-image: url('/img/iphone-hand-mobile@1x.png'), url('/img/bg-back-mobile@1x.jpg');
-    background-position: center bottom, center;
+    background-position: left bottom, center;
+    background-size: auto, cover;
+    
+    @media @tablet-widths {
+      background-position: 190px bottom, center;
+      background-size: auto 75%, cover;
+    }
+    
+    @media @desktop-widths {
+      background-position: 476px bottom, center;
+      background-size: auto 75%, cover;
+    }
   }
+  
+  @media @tablet-widths {
+    min-height: 835px;
+  }
+  
 }
 
 .main-header {
