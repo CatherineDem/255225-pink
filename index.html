@@ -7,27 +7,27 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-    <div class="container">
-      <header class="page-header page-header--index">
+    <header class="page-header page-header--index">
+      <div class="container">
         <h1 class="visually-hidden">PINK</h1>
         <a class="logo-link">
-          <img src="http://placehold.it/150x100" width="152" height="49" alt="PINK">
+          <img src="/img/logo-pink-white-mobile.svg" width="80" height="23" alt="PINK">
         </a>
-        <div class="main-nav__container">
-          <nav class="main-nav main-nav--closed main-nav--nojs">
-            <div class="main-nav__wrapper">
-              <ul class="main-nav__items">
-                <li class="main-nav__item main-nav__item--active"><a>Главная</a></li>
-                <li class="main-nav__item"><a href="photo.html">Фотографии</a></li>
-                <li class="main-nav__item"><a href="form.html">Конкурс</a></li>
-                <li class="main-nav__item"><a href="">HTML Academy</a></li>
-              </ul>
-            </div>
-          </nav>
-          <button class="main-nav__toggle" type="button" aria-label="Закрыть"></button>
+      </div>
+      <nav class="main-nav main-nav--closed main-nav--nojs">
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__items">
+            <li class="main-nav__item main-nav__item--active"><a>Главная</a></li>
+            <li class="main-nav__item"><a href="photo.html">Фотографии</a></li>
+            <li class="main-nav__item"><a href="form.html">Конкурс</a></li>
+            <li class="main-nav__item"><a href="">HTML Academy</a></li>
+          </ul>
         </div>
-      </header>
-      <main>
+        <button class="main-nav__toggle" type="button" aria-label="Закрыть"></button>
+      </nav>    
+    </header>
+    <main>
+      <div class="container">  
         <section class="downloads">
           <h2 class="visually-hidden">Скачать приложение</h2>
           <div class="downloads__title">Взгляните на жизнь иначе</div>
@@ -44,7 +44,9 @@
           <p class="promo__text">Устали от серости мегаполиса?</p>
           <p class="promo__text">Нам есть что вам предложить!</p>
         </section>
-        <section class="product">
+      </div>
+      <section class="product">
+        <div class="container">
           <h2 class="visually-hidden">Pink</h2>
           <ul class="product__items">
             <li class="product__item">
@@ -60,15 +62,19 @@
               <p class="product__item-description">Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых</p>
             </li>
           </ul>
-        </section>
-        <section class="effect">
+        </div>
+      </section>
+      <section class="effect">
+        <div class="container">
           <div class="effect__wrapper">
             <p class="effect__title">Эффект на 24 часа!</p>
             <p class="effect__description">Британские ученые провели исследования и доказали,
-<br>что положительный эффект от использования приложения длится целые сутки!</p>
+  <br>что положительный эффект от использования приложения длится целые сутки!</p>
             <p class="effect__link"><a href="">Узнать больше об исследовании</a></p>
           </div>
-        </section>
+        </div>
+      </section>
+      <div class="container">
         <section class="reviews">
           <h2 class="visually-hidden">Отзывы</h2>
           <div class="reviews-slider">
@@ -77,7 +83,11 @@
             <input class="reviews-slider__input" type="radio" name="reviews" id="reviews-input-3">
             <div class="reviews-slider__items">
               <blockquote class="reviews-slider__item">
-                <div class="reviews-slider__author-text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</div>
+                <div class="reviews-slider__item-wrapper">
+                  <span class="reviews-slider__toggle-btn reviews-slider__toggle-btn--prev"></span>
+                  <div class="reviews-slider__author-text"><span>«</span>Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!<span>»</span></div>
+                  <span class="reviews-slider__toggle-btn reviews-slider__toggle-btn--next"></span>
+                </div>
                 <div class="reviews-slider__author">
                   <cite class="reviews-slider__author-name">Николай Петров</cite>
                   <p class="reviews-slider__author-info">25 лет, водитель трамвая</p>
@@ -91,7 +101,9 @@
             </div>
           </div>
         </section>
-        <section class="price">
+      </div>
+      <section class="price">
+        <div class="container">
           <h2 class="visually-hidden">Прайс</h2>
           <div class="price-slider">
             <input class="price-slider__input" type="radio" name="price" id="price-input-1">
@@ -139,7 +151,9 @@
               <label class="price-slider__toggle" for="price-input-3"></label>
             </div>
           </div>
-        </section>
+        </div>
+      </section>
+      <div class="container">
         <section class="contacts">
           <h2 class="visually-hidden">Контакты</h2>
           <p class="contacts__description">Остались вопросы? Свяжитесь с нами!</p>
@@ -158,20 +172,23 @@
             </li>
           </ul>
         </section>
-        <div class="map"></div>
-      </main>
-      <footer class="page-footer page-footer--index">
-      <a class="footer-logo" aria-label="Pink"><img src="http://placehold.it/150x100" width="150" height="41" alt="PINK"></a>
-      <div class="social-link">
-        <a class="social-link__btn social-link__btn--tw" href="" aria-label="Twitter" title="Twitter"></a>
-        <a class="social-link__btn social-link__btn--fb" href="" aria-label="Facebook" title="Facebook"></a>
-        <a class="social-link__btn social-link__btn--yt" href="" aria-label="YouTube" title="YouTube"></a>
       </div>
-      <p class="copyright">
-        Разработано:
-        <a class="copyright__academy-logo" aria-label="HTML Academy"><img src="http://placehold.it/150x100" width="30" height="35" alt="PINK"></a>
-      </p>
-    </footer>
+      <div class="map"></div>
+    </main>
+    <div class="container">
+      <footer class="page-footer page-footer--index">
+        <a class="footer-logo" aria-label="Pink"><img src="http://placehold.it/150x100" width="150" height="41" alt="PINK"></a>
+        <div class="social-link">
+          <a class="social-link__btn social-link__btn--tw" href="" aria-label="Twitter" title="Twitter"></a>
+          <a class="social-link__btn social-link__btn--fb" href="" aria-label="Facebook" title="Facebook"></a>
+          <a class="social-link__btn social-link__btn--yt" href="" aria-label="YouTube" title="YouTube"></a>
+        </div>
+        <p class="copyright">
+          Разработано:
+          <a class="copyright__academy-logo" aria-label="HTML Academy"><img src="http://placehold.it/150x100" width="30" height="35" alt="PINK"></a>
+        </p>
+      </footer>
     </div>
+    <script src="js/main-nav.js" type="text/javascript"></script>
   </body>
 </html>
