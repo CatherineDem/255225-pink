@@ -1,7 +1,14 @@
 .field {
-  width: 280px;
+  width: 100%;
+  box-sizing: border-box;
   margin: 0 auto;
   margin-bottom: 20px;
+  
+  @media @tablet-widths {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
 
 .field-text-format() {
@@ -16,6 +23,7 @@
   line-height: 30px;
   text-transform: uppercase;
   color: @text-color-rose;
+  margin-right: 22px;
 }
 
 .field__label-check {
@@ -38,6 +46,10 @@
 
   &:hover::before {
     border-color: @text-color-main;
+  }
+  
+  @media @tablet-widths {
+    margin-top: 20px;
   }
 }
 
@@ -62,6 +74,11 @@
   &:focus {
     border-color: @text-color-rose;
     outline: none;
+  }
+  
+  &--phone,
+  &--email {
+    margin-bottom: 10px;
   }
 }
 
