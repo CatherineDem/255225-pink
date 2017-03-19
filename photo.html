@@ -7,150 +7,177 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-    <header class="page-header page-header--photo">
-      <a class="logo-link" href="index.html">
-        <img src="http://placehold.it/150x100" width="152" height="49" alt="PINK">
+    <div class="container">
+      <a class="logo-link">
+        <img src="/img/logo-pink-white-mobile.svg" width="80" height="23" alt="PINK">
       </a>
-      <nav class="main-nav main-nav--closed main-nav--nojs">
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__items">
-            <li class="main-nav__item"><a href="index.html">Главная</a></li>
-            <li class="main-nav__item main-nav__item--active"><a>Фотографии</a></li>
-            <li class="main-nav__item"><a href="form.html">Конкурс</a></li>
-            <li class="main-nav__item"><a href="">HTML ACADEMY</a></li>
-          </ul>
-        </div>
-      </nav>
+    </div>
+    <nav class="main-nav main-nav--closed main-nav--nojs">
+      <div class="main-nav__wrapper">
+        <ul class="main-nav__items">
+          <li class="main-nav__item"><a href="index.html">Главная</a></li>
+          <li class="main-nav__item main-nav__item--active"><a>Фотографии</a></li>
+          <li class="main-nav__item"><a href="form.html">Конкурс</a></li>
+          <li class="main-nav__item"><a href="">HTML Academy</a></li>
+        </ul>
+      </div>
       <button class="main-nav__toggle" type="button" aria-label="Закрыть"></button>
-      <h1 class="main-header">Фотографии пользователей</h1>
+    </nav>
+    <header class="page-header page-header--page">
+      <h1 class="page-header__main-header">Фотографии пользователей</h1>
     </header>
     <main>
-      <section class="page-description">
-        <h2 class="visually-hidden">Фото</h2>
-        <p class="page-description__text">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
-      </section>
+      <div class="container">
+        <section class="page-description">
+          <h2 class="visually-hidden">Фото</h2>
+          <p class="page-description__text">Взгляните на фотографии, которые выкладывают пользователи! <br>Видите, как не хватает ваших?</p>
+        </section>
+      </div>
       <div class="panorama">
-        <a href=""><img src="/img/panorama-mobile@1x.jpg" width="320" height="137" alt="Панорама дня"></a>
-        <div class="panorama__wrapper">
-          <div class="photo-description">
-            <p class="photo-description__auth">Анна <span class="photo-description__pubdate">(5 минут назад)</span></p>
-            <p class="photo-description__text">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
-            <div class="photo-description__likes">
-              <span class="photo-description__like-btn"></span> нравится: 215
+        <a class="panorama__photo" href=""><img src="/img/panorama-mobile@1x.jpg" width="320" height="137" alt="Панорама дня"></a>
+        <div class="container">
+          <div class="panorama__wrapper">
+            <div class="photo-description photo-description--panorama">
+              <p class="photo-description__auth">Анна <span class="photo-description__pubdate">(5 минут назад)</span></p>
+              <p class="photo-description__text">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
+              <div class="photo-description__likes">
+                <span class="photo-description__like-btn"></span> нравится: 215
+              </div>
             </div>
           </div>
         </div>
       </div>
-      <ul class="photos">
-        <li class="photos__item">
-          <a href=""><img src="/img/photo-1-mobile@1x.jpg" width="280" height="180" alt="Фото"></a>
-          <div class="photo-description">
-            <p class="photo-description__auth">Левон <span class="photo-description__pubdate">(5 часов назад)</span></p>
-            <p class="photo-description__text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
-            <div class="photo-description__likes">
-              <span class="photo-description__like-btn"></span> нравится: 356
+      <div class="container">
+        <ul class="photos">
+          <li class="photos__item">
+            <a class="photos__link" href=""><img src="/img/photo-1-mobile@1x.jpg" width="280" height="180" alt="Фото"></a>
+            <div class="photo-description">
+              <p class="photo-description__auth">Левон <span class="photo-description__pubdate">(5 часов назад)</span></p>
+              <p class="photo-description__text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+              <div class="photo-description__likes">
+                <span class="photo-description__like-btn"></span> нравится: 356
+              </div>
             </div>
-          </div>
-        </li>
-        <li class="photos__item">
-          <a href=""><img src="/img/photo-2-mobile@1x.jpg" width="280" height="180" alt="Фото"></a>
-          <div class="photo-description">
-            <p class="photo-description__auth">Антон <span class="photo-description__pubdate">(12 часов назад)</span></p>
-            <p class="photo-description__text">Соседи будут рады!</p>
-            <div class="photo-description__likes">
-              <span class="photo-description__like-btn"></span> нравится: 666
+          </li>
+          <li class="photos__item">
+            <a class="photos__link" href=""><img src="/img/photo-2-mobile@1x.jpg" width="280" height="180" alt="Фото"></a>
+            <div class="photo-description">
+              <p class="photo-description__auth">Антон <span class="photo-description__pubdate">(12 часов назад)</span></p>
+              <p class="photo-description__text">Соседи будут рады!</p>
+              <div class="photo-description__likes">
+                <span class="photo-description__like-btn"></span> нравится: 666
+              </div>
             </div>
-          </div>
-        </li>
-        <li class="photos__item">
-          <a href=""><img src="/img/photo-3-mobile@1x.jpg" width="280" height="180" alt="Фото"></a>
-          <div class="photo-description">
-            <p class="photo-description__auth">Борис <span class="photo-description__pubdate">(20 часов назад)</span></p>
-            <p class="photo-description__text">Здесь могла быть ваша цитата о высоком и вечном.</p>
-            <div class="photo-description__likes">
-              <span class="photo-description__like-btn"></span> нравится: 215
+          </li>
+          <li class="photos__item">
+            <a class="photos__link" href=""><img src="/img/photo-3-mobile@1x.jpg" width="280" height="180" alt="Фото"></a>
+            <div class="photo-description">
+              <p class="photo-description__auth">Борис <span class="photo-description__pubdate">(20 часов назад)</span></p>
+              <p class="photo-description__text">Здесь могла быть ваша цитата о высоком и вечном.</p>
+              <div class="photo-description__likes">
+                <span class="photo-description__like-btn"></span> нравится: 215
+              </div>
             </div>
-          </div>
-        </li>
-        <li class="photos__item">
-          <a href=""><img src="/img/photo-4-mobile@1x.jpg" width="280" height="180" alt="Фото"></a>
-          <div class="photo-description">
-            <p class="photo-description__auth">Сергей <span class="photo-description__pubdate">(25 часов назад)</span></p>
-            <p class="photo-description__text">Самая кубанская в мире!</p>
-            <div class="photo-description__likes">
-              <span class="photo-description__like-btn"></span> нравится: 215
+          </li>
+          <li class="photos__item">
+            <a class="photos__link" href=""><img src="/img/photo-4-mobile@1x.jpg" width="280" height="180" alt="Фото"></a>
+            <div class="photo-description">
+              <p class="photo-description__auth">Сергей <span class="photo-description__pubdate">(25 часов назад)</span></p>
+              <p class="photo-description__text">Самая кубанская в мире!</p>
+              <div class="photo-description__likes">
+                <span class="photo-description__like-btn"></span> нравится: 215
+              </div>
             </div>
-          </div>
-        </li>
-        <li class="photos__item">
-          <a href=""><img src="/img/photo-5-mobile@1x.jpg" width="280" height="180" alt="Фото"></a>
-          <div class="photo-description">
-            <p class="photo-description__auth">Максим <span class="photo-description__pubdate">(40 часов назад)</span></p>
-            <p class="photo-description__text">Где снег-то?</p>
-            <div class="photo-description__likes">
-              <span class="photo-description__like-btn"></span> нравится: 150
+          </li>
+          <li class="photos__item">
+            <a class="photos__link" href=""><img src="/img/photo-5-mobile@1x.jpg" width="280" height="180" alt="Фото"></a>
+            <div class="photo-description">
+              <p class="photo-description__auth">Максим <span class="photo-description__pubdate">(40 часов назад)</span></p>
+              <p class="photo-description__text">Где снег-то?</p>
+              <div class="photo-description__likes">
+                <span class="photo-description__like-btn"></span> нравится: 150
+              </div>
             </div>
-          </div>
-        </li>
-        <li class="photos__item">
-          <a href=""><img src="/img/photo-6-mobile@1x.jpg" width="280" height="180" alt="Фото"></a>
-          <div class="photo-description">
-            <p class="photo-description__auth">Надежда <span class="photo-description__pubdate">(45 часов назад)</span></p>
-            <p class="photo-description__text">Всем GM и взаимные лайки!</p>
-            <div class="photo-description__likes">
-              <span class="photo-description__like-btn"></span> нравится: 2560
+          </li>
+          <li class="photos__item">
+            <a class="photos__link" href=""><img src="/img/photo-6-mobile@1x.jpg" width="280" height="180" alt="Фото"></a>
+            <div class="photo-description">
+              <p class="photo-description__auth">Надежда <span class="photo-description__pubdate">(45 часов назад)</span></p>
+              <p class="photo-description__text">Всем GM и взаимные лайки!</p>
+              <div class="photo-description__likes">
+                <span class="photo-description__like-btn"></span> нравится: 2560
+              </div>
             </div>
-          </div>
-        </li>
-      </ul>
+          </li>
+        </ul>
+      </div>
       <section class="page-description">
         <h2 class="visually-hidden">Добавьте фото</h2>
         <p class="page-description__text">Затмите их всех!<br> Выкладывайте все, что накопилось в телефоне!</p>
       </section>
       <section class="post">
-        <h2 class="visually-hidden">Ваше фото</h2>
-        <form class="post-form" name="postphoto" action="https://echo.htmlacademy.ru/">
-          <div class="post-form__photo">
-            <img src="/img/photo-7-mobile@1x.jpg" width="280" height="374" alt="Запостить фото">
-          </div>
-          <div class="post-form__controls">
-            <div class="post-form__wrapper">
-              <div class="post-form__control-btn">
-                <input class="post-form__input" type="radio" name="editbtn" id="crop" checked>
-                <label class="post-form__label-crop post-form__label--selected" for="crop"></label>
+        <div class="container">
+          <h2 class="visually-hidden">Ваше фото</h2>
+          <form class="post-form" name="postphoto" action="https://echo.htmlacademy.ru/">
+            <div class="post-form__photo">
+              <img src="/img/photo-7-mobile@1x.jpg" width="280" height="374" alt="Запостить фото">
+            </div>
+            <div class="post-form__controls">
+              <div class="post-form__wrapper">
+                <div class="post-form__control-btn">
+                  <input class="post-form__input" type="radio" name="editbtn" id="crop" checked>
+                  <label class="post-form__label-crop post-form__label--selected" for="crop"></label>
+                  <div class="post-form__control-slider">
+                    <div class="post-form__slider"></div>
+                    <div class="post-form__toggle"> </div>
+                  </div>
+                </div>
+                <div class="post-form__control-btn">
+                  <input class="post-form__input" type="radio" name="editbtn" id="color">
+                  <label class="post-form__label-color" for="color"></label>
+                  <div class="post-form__control-slider">
+                    <div class="post-form__slider"></div>
+                    <div class="post-form__toggle"> </div>
+                  </div>
+                </div>
+                <div class="post-form__control-btn">
+                  <input class="post-form__input" type="radio" name="editbtn" id="bright">
+                  <label class="post-form__label-bright" for="bright"></label>
+                  <div class="post-form__control-slider">
+                    <div class="post-form__slider"></div>
+                    <div class="post-form__toggle"> </div>
+                  </div>
+                </div>
               </div>
-              <div class="post-form__control-btn">
-                <input class="post-form__input" type="radio" name="editbtn" id="color">
-                <label class="post-form__label-color" for="color"></label>
+              <div class="post-form__control-slider">
+                <div class="post-form__slider"></div>
+                <div class="post-form__toggle"> </div>
               </div>
-              <div class="post-form__control-btn">
-                <input class="post-form__input" type="radio" name="editbtn" id="bright">
-                <label class="post-form__label-bright" for="bright"></label>
+              <div class="post-form__btns">
+                <button class="btn btn--post" type="submit">Запостить</button>
+                <button class="btn btn--cancel" type="reset">Отмена</button>
               </div>
             </div>
-            <div class="post-form__control-slider">
-              <div class="post-form__slider"></div>
-              <div class="post-form__toggle"></div>
-            </div>
-          </div>
-          <div class="post-form__btns">
-            <button class="btn btn--post" type="submit">Запостить</button>
-            <button class="btn btn--cancel" type="reset">Отмена</button>
-          </div>
-        </form>
+            
+          </form>
+        </div>  
       </section>
+      
     </main>
-    <footer class="page-footer">
-      <a class="footer-logo" aria-label="Pink"><img src="http://placehold.it/150x100" width="150" height="41" alt="PINK"></a>
-      <div class="social-link">
-        <a class="social-link__btn social-link__btn--tw" href="" aria-label="Twitter" title="Twitter"></a>
-        <a class="social-link__btn social-link__btn--fb" href="" aria-label="Facebook" title="Facebook"></a>
-        <a class="social-link__btn social-link__btn--yt" href="" aria-label="YouTube" title="YouTube"></a>
-      </div>
-      <p class="copyright">
-        Разработано:
-        <a class="copyright__academy-logo" aria-label="HTML Academy"><img src="http://placehold.it/150x100" width="30" height="35" alt="PINK"></a>
-      </p>
-    </footer>
+    <div class="container">
+      <footer class="page-footer">
+        <a class="footer-logo" aria-label="Pink"><img src="http://placehold.it/150x100" width="150" height="41" alt="PINK"></a>
+        <div class="social-link">
+          <a class="social-link__btn social-link__btn--tw" href="" aria-label="Twitter" title="Twitter"></a>
+          <a class="social-link__btn social-link__btn--fb" href="" aria-label="Facebook" title="Facebook"></a>
+          <a class="social-link__btn social-link__btn--yt" href="" aria-label="YouTube" title="YouTube"></a>
+        </div>
+        <p class="copyright">
+          Разработано:
+          <a class="copyright__academy-logo" aria-label="HTML Academy"><img src="http://placehold.it/150x100" width="30" height="35" alt="PINK"></a>
+        </p>
+      </footer>
+    </div>
+    <script src="js/main-nav.js" type="text/javascript"></script>
   </body>
 </html>
