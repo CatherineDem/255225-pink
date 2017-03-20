@@ -7,21 +7,23 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-    <div class="container">
-      <a class="logo-link">
-        <img src="/img/logo-pink-white-mobile.svg" width="80" height="23" alt="PINK">
-      </a>
-    </div>
     <nav class="main-nav main-nav--closed main-nav--nojs">
-      <div class="main-nav__wrapper">
-        <ul class="main-nav__items">
-          <li class="main-nav__item"><a href="index.html">Главная</a></li>
-          <li class="main-nav__item"><a href="photo.html">Фотографии</a></li>
-          <li class="main-nav__item main-nav__item--active"><a>Конкурс</a></li>
-          <li class="main-nav__item"><a href="">HTML Academy</a></li>
-        </ul>
+      <div class="container--menu">
+        <div class="main-nav__header">
+          <a class="logo-link" href="index.html">
+            <img src="/img/logo-pink-white-mobile.svg" width="80" height="23" alt="PINK">
+          </a>
+          <button class="main-nav__toggle" type="button" aria-label="Закрыть"></button>
+        </div>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__items">
+            <li class="main-nav__item"><a href="index.html">Главная</a></li>
+            <li class="main-nav__item"><a href="photo.html">Фотографии</a></li>
+            <li class="main-nav__item main-nav__item--active"><a>Конкурс</a></li>
+            <li class="main-nav__item"><a href="">HTML Academy</a></li>
+          </ul>
+        </div>
       </div>
-      <button class="main-nav__toggle" type="button" aria-label="Закрыть"></button>
     </nav>
     <header class="page-header page-header--page">
       <h1 class="page-header__main-header">Конкурс на самое безбашенное путешествие с Пинк</h1>
@@ -55,29 +57,35 @@
               <fieldset class="fieldgroup fieldgroup--grey">
                 <p class="fieldgroup__title">Ваши безбашенные достижения в путешествии</p>
                 <div class="fieldgroup-wrapper">
-                  <div class="field">
-                    <input class="field__input-btn field__input-btn--checkbox" type="checkbox" name="checkbox-selfie" id="checkbox-selfie" checked>
-                    <label class="field__label-check" for="checkbox-selfie">Сделал селфи с акулой</label>
+                  <div class="fieldgroup-column">
+                    <div class="field">
+                      <input class="field__input-btn field__input-btn--checkbox" type="checkbox" name="checkbox-selfie" id="checkbox-selfie" checked>
+                      <label class="field__label-check" for="checkbox-selfie">Сделал селфи с акулой</label>
+                    </div>
+                    <div class="field">
+                      <input class="field__input-btn field__input-btn--checkbox" type="checkbox" name="checkbox-beach" id="checkbox-beach" checked>
+                      <label class="field__label-check" for="checkbox-beach">Обгорел на пляже</label>
+                    </div>
                   </div>
-                  <div class="field">
-                    <input class="field__input-btn field__input-btn--checkbox" type="checkbox" name="checkbox-beach" id="checkbox-beach" checked>
-                    <label class="field__label-check" for="checkbox-beach">Обгорел на пляже</label>
+                  <div class="fieldgroup-column">
+                    <div class="field">
+                      <input class="field__input-btn field__input-btn--checkbox" type="checkbox" name="checkbox-chucknorris" id="checkbox-chucknorris">
+                      <label class="field__label-check" for="checkbox-chucknorris">Видел Чака Норриса</label>
+                    </div>
+                    <div class="field">
+                      <input class="field__input-btn field__input-btn--checkbox" type="checkbox" name="checkbox-souvenir" id="checkbox-souvenir">
+                      <label class="field__label-check" for="checkbox-souvenir">Накупил сувениров</label>
+                    </div>
                   </div>
-                  <div class="field">
-                    <input class="field__input-btn field__input-btn--checkbox" type="checkbox" name="checkbox-chucknorris" id="checkbox-chucknorris">
-                    <label class="field__label-check" for="checkbox-chucknorris">Видел Чака Норриса</label>
-                  </div>
-                  <div class="field">
-                    <input class="field__input-btn field__input-btn--checkbox" type="checkbox" name="checkbox-souvenir" id="checkbox-souvenir">
-                    <label class="field__label-check" for="checkbox-souvenir">Накупил сувениров</label>
-                  </div>
-                  <div class="field">
-                    <input class="field__input-btn field__input-btn--checkbox" type="checkbox" name="checkbox-tower" id="checkbox-tower" checked>
-                    <label class="field__label-check" for="checkbox-tower">Удержал башню</label>
-                  </div>
-                  <div class="field">
-                    <input class="field__input-btn field__input-btn--checkbox" type="checkbox" name="checkbox-hotel" id="checkbox-hotel">
-                    <label class="field__label-check" for="checkbox-hotel">Разгромил отель</label>
+                  <div class="fieldgroup-column">
+                    <div class="field">
+                      <input class="field__input-btn field__input-btn--checkbox" type="checkbox" name="checkbox-tower" id="checkbox-tower" checked>
+                      <label class="field__label-check" for="checkbox-tower">Удержал башню</label>
+                    </div>
+                    <div class="field">
+                      <input class="field__input-btn field__input-btn--checkbox" type="checkbox" name="checkbox-hotel" id="checkbox-hotel">
+                      <label class="field__label-check" for="checkbox-hotel">Разгромил отель</label>
+                    </div>
                   </div>
                 </div>
               </fieldset>

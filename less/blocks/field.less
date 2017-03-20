@@ -24,6 +24,10 @@
   text-transform: uppercase;
   color: @text-color-rose;
   margin-right: 22px;
+  
+  @media @desktop-widths {
+    padding: 0;
+  }
 }
 
 .field__label-check {
@@ -42,6 +46,10 @@
     height: 34px;
     border: 2px solid @table-border-color;
     background-color: @text-color-white;
+    
+    @media @desktop-widths {
+      margin-right: 23px;
+    }
   }
 
   &:hover::before {
@@ -107,6 +115,7 @@
 }
 
 .field__message {
+  display: block;
   width: 100%;
   min-height: 200px;
   box-sizing: border-box;
@@ -114,9 +123,16 @@
   margin: 0 auto;
   font: inherit;
   .field-text-format();
-
   border: 2px solid @table-border-color;
   resize: none;
+  
+  @media @tablet-widths {
+    max-width: 500px;
+  }
+   
+  @media @desktop-widths {
+    max-width: 820px;
+  }
 
   &::placeholder {
     color: @text-color-main;

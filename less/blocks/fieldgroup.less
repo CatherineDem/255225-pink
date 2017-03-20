@@ -38,7 +38,7 @@
   }
   
   @media @desktop-widths {
-    width: 44%;
+    width: 435px;
     padding: 0;
     margin: 0;
     margin-bottom: 40px;
@@ -52,9 +52,11 @@
     &:nth-child(2) .fieldgroup-wrapper {
       display: flex;
       flex-wrap: wrap;
+      justify-content: space-between;
+      align-content: space-between;
       
       & .field {
-        width: 30%;
+        width: auto;
       }
     }
   }
@@ -67,22 +69,31 @@
   @media @tablet-widths {
     border: 2px solid @table-border-color;
     border-top: none;
-    padding: 50px 60px;
+    padding: 50px 53px;
   }
   
   &--noborder {
     border: none;
     padding: 0;
     
-    @media @desktop-widths {
-      min-height: 385px;
+    @media @tablet-widths {
+      height: 295px;
       box-sizing: border-box;
-      margin-bottom: -50px;
-      padding-top: 35px;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
+      
+      & .field {
+        margin-bottom: 0;
+      }
     }
+   
+    @media @desktop-widths {
+      min-height: 385px;
+      margin-bottom: -50px;
+      padding-top: 35px;
+    }
+    
   }
   
   &--noborder .field {
@@ -94,7 +105,7 @@
   &--icon-inputs {
     @media @desktop-widths {
       display: flex;
-      padding-bottom: 0;
+      padding: 40px 0 0 0;
     }
   }
   

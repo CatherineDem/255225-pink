@@ -5,22 +5,35 @@
   
   @media @tablet-widths {
     flex-wrap: nowrap;
-    padding: 60px 0 0 0;
+    padding: 60px 40px;
   }
   
   @media @desktop-widths {
-    padding: 56px 80px 26px;
+    padding: 56px 80px;
   }
 }
 
 .post-form__photo {
-  width: auto;
+  display: block;
+  box-sizing: border-box;
+  width: 280px;
+  height: 374px;
   padding-top: 20px;
   margin: 0 auto;
+  overflow: hidden;
   
   @media @tablet-widths {
-    margin-right: 44px;
+    width: 300px;
+    height: 400px;
     padding-top: 0;
+  }
+  
+  img {
+    display: block;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    width: 100%;
   }
 }
 
@@ -52,6 +65,7 @@
   @media @tablet-widths {
     flex-wrap: wrap;
     padding: 0;
+    margin-top: -20px;
     max-width: 276px;
   }
 }
@@ -88,17 +102,26 @@
   background-color: @text-color-white;
   border-radius: 50%;
   cursor: pointer;
+  
+  &:active {
+    background-color: @text-color-rose;
+  }
 }
 
 .post-form__btns {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  padding: 20px 0;
+  padding: 20px 0 0 0;
   border-top: 1px solid fade(@text-color-main, 10);
   
   @media @tablet-widths {
     border: none;
+    margin-top: 45px;
+    
+    & .btn:last-child {
+      margin-bottom: 0;
+    }
   }
 }
 
@@ -142,13 +165,12 @@
 }
 
 .post-form__control-btn {
-   
+  
   @media @tablet-widths {
     display: flex;
     align-items: center;
     width: 100%;
-    min-height: 75px;
-    padding-top: 10px;
+    min-height: 70px;
     padding-left: 17px;
     border-bottom: 1px solid fade(@text-color-main, 10); 
   }
