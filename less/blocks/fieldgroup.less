@@ -9,12 +9,10 @@
 
   &--grey {
     background-color: @bg-color-grey;
-    
     @media @tablet-widths {
       background-color: transparent;
     }
   }
-  
   @media @tablet-widths {
     &:nth-child(1) {
       order:1;
@@ -36,7 +34,6 @@
       order: 5;
     } 
   }
-  
   @media @desktop-widths {
     width: 435px;
     padding: 0;
@@ -65,7 +62,6 @@
 .fieldgroup-wrapper {
   width: 100%;
   box-sizing: border-box;
-  
   @media @tablet-widths {
     border: 2px solid @table-border-color;
     border-top: none;
@@ -75,7 +71,6 @@
   &--noborder {
     border: none;
     padding: 0;
-    
     @media @tablet-widths {
       height: 295px;
       box-sizing: border-box;
@@ -87,7 +82,6 @@
         margin-bottom: 0;
       }
     }
-   
     @media @desktop-widths {
       min-height: 385px;
       margin-bottom: -50px;
@@ -116,7 +110,6 @@
       flex-direction: column-reverse;
       align-items: flex-start; 
     }
-    
     @media @desktop-widths {
       max-width: 375px;
     }
@@ -136,7 +129,6 @@
   
   &--nomobile {
     display: none;
-    
     @media @tablet-widths {
       display: block;
     }
