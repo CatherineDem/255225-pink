@@ -1,27 +1,65 @@
 @bg-modal-popup: #ffffff;
 
 .modal-popup {
-  width: 320px;
+  width: 100%;
   box-sizing: border-box;
+  margin: 0 auto;
   margin-bottom: 30px;
   background-color: @bg-modal-popup;
   box-shadow: 0 7px 15px 0 rgba(0, 1, 1, 0.15);
+  @media @tablet-widths {
+    width: 465px;
+    padding-top: 23px;
+  }
+  @media @desktop-widths {
+    width: 783px;
+  }
+
+  &--error {
+    @media @desktop-widths {
+      width: 462px;
+    }
+  }
 }
 
 .modal-popup__header {
+  display: block;
   padding: 20px 20px;
+  margin: 0 auto;
   font-size: 18px;
   line-height: 24px;
   font-weight: bold;
   text-align: center;
+  @media @tablet-widths {
+    max-width: 50%;
+    font-size: 30px;
+    line-height: 40px;
+  }
+  @media @desktop-widths {
+    max-width: 55%;
+  }
 }
 
 .modal-popup__message {
+  display: block;
+  margin: 0 auto;
   margin-bottom: 30px;
   padding: 0 20px;
   font-size: 14px;
   line-height: 24px;
   text-align: center;
+  @media @tablet-widths {
+    & br {
+      display: none;
+    }
+
+    max-width: 67%;
+    font-size: 18px;
+    line-heoght: 24px;
+  }
+  @media @tablet-widths {
+    max-width: 60%;
+  }
 }
 
 .modal-popup__btn-wrapper {
@@ -29,5 +67,9 @@
 
   &--grey {
     background-color: @bg-color-grey;
+  }
+
+  & .form-btn {
+    margin: 0 auto;
   }
 }

@@ -1,7 +1,7 @@
 @import "../global/slider.less";
 
 .price-slider {
-
+  max-width: 100%;
 }
 
 .price-slider__input {
@@ -10,6 +10,9 @@
 
 .price-slider__toggles {
   .slider-toggles();
+  @media @tablet-widths {
+    display: none;
+  }
 }
 
 .price-slider__toggle {

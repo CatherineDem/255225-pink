@@ -1,8 +1,18 @@
 .price-table {
   display: table;
   width: 840px;
+  margin: 0 auto 0 50%;
   margin-bottom: 40px;
   border-collapse: collapse;
+  transform: translateX(-50%);
+  @media @tablet-widths {
+    width: 620px;
+    margin: 0 auto;
+    transform: none;
+  }
+  @media @desktop-widths {
+    width: 942px;
+  }
 }
 
 .price-table__column-group {
@@ -11,30 +21,71 @@
 
 .price-table__column {
   display: table-column;
-  width: 279px;
 }
 
 .price-table__header {
   display: table-header-group;
-
 }
 
 .price-table__header-row {
   display: table-row;
   background-color: @bg-color-nav;
+
+  .price-table__header-cell:first-child {
+    display: none;
+    @media @tablet-widths {
+      display: table-cell;
+      background-color: @bg-color-grey;
+      border: none;
+    }
+  }
 }
 
 .price-table__header-cell {
   display: table-cell;
-  padding: 26px;
+  position: relative;
+  padding: 19px;
   font-size: 18px;
   line-height: 30px;
   font-weight: bold;
   text-align: center;
+  text-transform: uppercase;
   color: @text-color-white;
   border: 2px solid @table-border-color;
-  &--hit {
 
+  &--hit {
+    overflow: hidden;
+
+    &::before {
+      content: 'ХИТ';
+      position: absolute;
+      left: -25px;
+      top: 10px;
+      width: 100px;
+      font-size: 14px;
+      line-height: 30px;
+      font-weight: 400;
+      background-color: @text-color-rose;
+      color: @text-color-white;
+      transform: rotate(-45deg);
+      @media @tablet-widths {
+        top: 1px;
+        left: -30px;
+      }
+      @media @desktop-widths {
+        top: 10px;
+        left: -25px;
+      }
+    }
+  }
+  @media @tablet-widths {
+    font-size: 16px;
+    padding: 9px 0;
+    min-width: 130px;
+  }
+  @media @desktop-widths {
+    font-size: 18px;
+    padding: 19px 22px;
   }
 }
 
@@ -42,6 +93,12 @@
   display: block;
   font-size: 24px;
   font-weight: 300;
+  @media @tablet-widths {
+    font-size: 18px;
+  }
+  @media @desktop-widths {
+    font-size: 24px;
+  }
 }
 
 .price-table__content {
@@ -50,22 +107,53 @@
 
 .price-table__content-row {
   display: table-row;
+
+  .price-table__content-cell:first-child {
+    display: none;
+    @media @tablet-widths {
+      display: table-cell;
+      font-size: 14px;
+      text-transform: none;
+    }
+    @media @desktop-widths {
+      font-size: 18px;
+    }
+  }
 }
 
 .price-table__content-cell {
   display: table-cell;
-  padding: 25px 30px;
+  box-sizing: border-box;
+  padding: 14px 30px;
   font-size: 14px;
   line-height: 30px;
   font-weight: normal;
   text-transform: uppercase;
   border: 2px solid @table-border-color;
+  background-color: #ffffff;
+  background-repeat: no-repeat;
+  background-position: right 20px center;
 
   &--yes {
-    background-color: #3dc644;
+    background-image: url('/img/icon-yes.svg');
+    background-size: 32px 23px;
   }
 
   &--no {
-    background-color: #f25b26;
+    background-image: url('/img/icon-no.svg');
+    background-size: 30px 27px;
+  }
+
+  &:not(:first-child) {
+    @media @tablet-widths {
+      font-size: 0;
+    }
+  }
+  @media @tablet-widths {
+    padding: 5px 10px;
+    background-position: 50% 50%;
+  }
+  @media @desktop-widths {
+    padding: 10px 15px;
   }
 }

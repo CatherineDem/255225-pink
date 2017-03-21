@@ -1,7 +1,21 @@
-.main-form {
+.main-form__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: space-between;
+  align-items: flex-start;
+  padding: 0;
+  @media @tablet-widths {
+    padding: 20px 40px;
+  }
+  @media @desktop-widths {
+    padding: 0 10px;
+  }
 }
 
 .main-form__required {
+  display: block;
+  width: auto;
   margin-top: 40px;
   font-size: 14px;
   line-height: 30px;
@@ -11,5 +25,17 @@
 
   span {
     color: @text-color-rose;
+  }
+}
+
+.main-form__submit-wrapper {
+  @media @tablet-widths {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 60px;
+    margin-bottom: 80px;
+  }
+  @media @desktop-widths {
+    padding: 0;
   }
 }

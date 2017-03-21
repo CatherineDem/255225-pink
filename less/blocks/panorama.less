@@ -8,7 +8,7 @@
     content: 'панорама дня';
     position: absolute;
     top: 0;
-    left: 160px;
+    right: 20px;
     padding: 6px 20px;
     font-size: 12px;
     line-height: 24px;
@@ -17,16 +17,53 @@
     color: @text-color-white;
     background-color: @text-color-rose;
     z-index: 2;
+    @media @tablet-widths {
+      left: auto;
+      right: 38px;
+      top: 58px;
+    }
+    @media @desktop-widths {
+      right: 132px;
+    }
   }
+}
+
+.panorama__photo {
+  display: block;
+  width: 100%;
+  padding: 0;
+  margin: 0 auto;
+  overflow-x: hidden;
 
   img {
     display: block;
-    padding: 0;
-    margin: 0;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto 0 50%;
+    transform: translateX(-50%);
+    @media @desktop-widths {
+      min-width: 100%;
+      height: auto;
+      margin: 0 auto;
+      transform: none;
+    }
+  }
+  @media @tablet-widths {
+    height: 510px;
+  }
+  @media @desktop-widths {
+    margin: 0 auto;
+    overflow-y: hidden;
   }
 }
 
 .panorama__wrapper {
   padding: 0 21px;
-  margin: 0;
+  margin: 0 auto;
+  @media @tablet-widths {
+    padding: 0 40px;
+  }
+  @media @desktop-widths {
+    padding: 0 10px;
+  }
 }
