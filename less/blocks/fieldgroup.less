@@ -17,41 +17,41 @@
     &:nth-child(1) {
       order:1;
     }
-    
+
     &:nth-child(2) {
       order: 4;
     }
-    
+
     &:nth-child(3) {
       order: 3;
     }
-    
+
     &:nth-child(4) {
       order: 2;
     }
-    
+
     &:nth-child(5) {
       order: 5;
-    } 
+    }
   }
   @media @desktop-widths {
     width: 435px;
     padding: 0;
     margin: 0;
     margin-bottom: 40px;
-    
+
     &:nth-child(3),
     &:nth-child(2),
     &:nth-child(5) {
       width: 100%;
     }
-    
+
     &:nth-child(2) .fieldgroup-wrapper {
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
       align-content: space-between;
-      
+
       & .field {
         width: auto;
       }
@@ -67,7 +67,7 @@
     border-top: none;
     padding: 50px 53px;
   }
-  
+
   &--noborder {
     border: none;
     padding: 0;
@@ -77,7 +77,7 @@
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-      
+
       & .field {
         margin-bottom: 0;
       }
@@ -87,22 +87,20 @@
       margin-bottom: -50px;
       padding-top: 35px;
     }
-    
   }
-  
+
   &--noborder .field {
-    @media @desktop-widths {
-      
+    @media @desktop-widths {  
     }
   }
-  
+
   &--icon-inputs {
     @media @desktop-widths {
       display: flex;
       padding: 40px 0 0 0;
     }
   }
-  
+
   &--icon-inputs .field {
     @media @tablet-widths {
       display: flex;
@@ -116,7 +114,6 @@
   }
 }
 
-
 .fieldgroup__title {
   width: 250px;
   margin: 0 auto;
@@ -126,14 +123,13 @@
   text-align: center;
   text-transform: uppercase;
   color: @text-color-rose;
-  
+
   &--nomobile {
     display: none;
     @media @tablet-widths {
       display: block;
     }
   }
-  
   @media @tablet-widths {
     display: block;
     width: 100%;
@@ -142,7 +138,7 @@
     padding: 0;
     line-height: 30px;
     overflow: hidden;
-    
+
     &::before,
     &::after {
       content: '';
@@ -155,11 +151,11 @@
       border: solid @text-color-white;
       border-width: 0 34px;
     }
-    
+
     &::before {
       margin-left: -100%;
     }
-    
+
     &::after {
       margin-right: -100%;
     }

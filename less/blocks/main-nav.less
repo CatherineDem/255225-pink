@@ -10,26 +10,26 @@
     align-items: center;
     background-color: fade(@text-color-black, 30);
   }
-  
+
   &--closed .main-nav__items {
     display:none;
     @media @desktop-widths {
       display: flex;
     }
   }
-  
+
   &--closed + .page-header--page {
     padding-top: 70px;
   }
-  
+
   &--opened {
     position: relative;
   }
-  
+
   &--opened + .page-header--page {
     background-position-y: -70px;
   }
-      
+    
   &--nojs {
     position: relative;
     @media @desktop-widths {
@@ -87,7 +87,6 @@
     display: none; 
   }
 }
-
 
 .main-nav--opened .main-nav__toggle {
   width: 25px;
@@ -151,7 +150,7 @@
       color: fade(@text-color-rose, 30);
     }
   }
-  
+
   &--active {
     @media @desktop-widths {
       color: #ffffff;
