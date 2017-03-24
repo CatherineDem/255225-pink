@@ -51,11 +51,12 @@
 @media @tablet-widths {
   .main-nav--opened + .page-header {
     min-height: 617px;
-    background-position: 36px 72px, -214px -110px;
-    background-size: 91%, auto 728px;
+    background-position: 0px 72px, -250px -110px;
+    background-size: auto 547px, auto 728px;
+    /*background-size: 91%, auto 728px;*/
 
     .downloads {
-      top: -331px;
+      top: -330px;
     }
   }
 }
@@ -94,6 +95,7 @@
   outline: none;
   background-color: transparent;
   fill: #ffffff;
+  cursor: pointer;
 
   &:hover {
     fill: @text-color-rose;
@@ -104,7 +106,7 @@
   }
 
   @media @tablet-widths {
-    padding-right: 27px;
+    padding-right: 10px;
     margin-top: 1px;
   }
   @media @desktop-widths {
