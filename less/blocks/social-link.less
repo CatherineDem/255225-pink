@@ -1,10 +1,14 @@
 .social-link {
-  min-width: 320px;
+  min-width: 176px;
   box-sizing: border-box;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 70px;
+  margin-left: -18px;
+  
+  @media @desktop-widths {
+    margin-left: 6px;
+  }
 }
 
 .social-link__btn {
@@ -12,17 +16,37 @@
   display: block;
   width: 44px;
   height: 44px;
+  margin-top: -5px;
   border: 3px solid fade(@text-color-main, 10);
   border-radius: 50%;
-
-  &--tw {
+  
+  &:hover {
+    border-color: @text-color-main;
+  }
+  
+  &:active {
+    opacity: 0.3;
   }
 
-  &--fb {
-
+  &--tw svg {
+    position: absolute;
+    top: 16px;
+    left: 14px;
   }
 
-  &--yt {
-
+  &--fb svg {
+    position: absolute;
+    top: 12px;
+    left: 18px;
   }
+
+  &--yt svg {
+    position: absolute;
+    top: 15px;
+    left: 16px;
+  }
+}
+
+.social-link__btn svg {
+  fill: @text-color-rose;
 }

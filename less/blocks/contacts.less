@@ -1,38 +1,55 @@
 .contacts {
-  padding: 50px 30px;
+  padding: 42px 30px;
+  @media @tablet-widths {
+    padding: 47px 30px;
+  }
+  
+  @media @desktop-widths {
+    padding: 66px 0px;
+  }
 }
 
 .contacts__description {
   display: block;
   width: 100%;
   margin: 0 auto;
-  margin-bottom: 40px;
+  margin-bottom: 32px;
   font-size: 24px;
   line-height: 30px;
   font-weight: 300;
   text-align: center;
   @media @tablet-widths {
     max-width: 60%;
+    margin-bottom: 43px;
     font-size: 40px;
     line-height: 48px;
   }
   @media @desktop-widths {
-    max-width: 50%;
+    max-width: 70%;
+    margin-bottom: 54px;
+    font-size: 50px;
+    line-height: 60px;
   }
 }
 
 .contacts__items {
+  display: block;
   min-height: 270px;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  align-content: center;
   list-style: none;
   padding: 0;
   margin: 0 auto;
+  @media @tablet-widths {
+    min-height: 200px;
+    padding: 0 35px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    align-content: space-between;
+  }
   @media @desktop-widths {
     min-height: 110px;
+    padding: 0;
     align-items: flex-start;
   }
 }
@@ -40,12 +57,12 @@
 .contacts__item {
   width: auto;
   max-width: 245px;
-  margin-bottom: 30px;
+  margin: 0 auto;
+  margin-bottom: 21px;
   text-align: center;
   @media @tablet-widths {
-    margin-left: 50px;
-    margin-right: 50px;
-    margin-bottom: 50px;
+    margin-bottom: 10px;
+    min-width: 240px;
   }
   @media @desktop-widths {
     margin-bottom: 0;
@@ -63,18 +80,29 @@
 }
 
 .contacts__item-title {
-  padding: 0;
+  padding: 1px;
   margin: 0;
   font-size: 18px;
   font-weight: bold;
+  @media @tablet-widths {
+    padding: 0px 0 6px;
+  }
+  @media @desktop-widths {
+    padding: 0px 0 26px;
+  }
 }
 
 .description () {
   padding: 0;
   margin: 0;
   font-size: 24px;
+  line-height: 30px;
   font-weight: 300;
   color: @text-color-rose;
+  
+  @media @tablet-widths {
+    line-height: 27px;
+  }
 }
 
 .contacts__item-description {

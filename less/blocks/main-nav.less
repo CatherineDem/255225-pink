@@ -25,7 +25,17 @@
   &--opened {
     position: relative;
   }
-
+  
+  &--opened + .page-header {
+    min-height: 664px;
+    background-position: left 110px, 50% -70px;
+    background-size: 80%, auto 462px;
+    
+    .downloads {
+      padding-top: 421px;
+    }
+  }
+  
   &--opened + .page-header--page {
     background-position-y: -70px;
   }
@@ -38,6 +48,18 @@
   }
 }
 
+@media @tablet-widths {
+  .main-nav--opened + .page-header {
+    min-height: 617px;
+    background-position: 36px 72px, -214px -110px;
+    background-size: 91%, auto 728px;
+  
+    .downloads {
+      top: -331px;
+    }
+  }
+}
+  
 .main-nav__header {
   box-sizing: border-box;
   width: 100%;
@@ -46,7 +68,10 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 20px;
+  padding: 0 18px;
+  @media @tablet-widths {
+    min-height: 110px;
+  }
   @media @desktop-widths {
     background-color: transparent;
   }
@@ -62,11 +87,26 @@
   display: block;
   margin: 0;
   margin-left: auto;
+  margin-top: -2px;
   padding: 0;
   height: 26px;
   border: none;
   outline: none;
   background-color: transparent;
+  fill: #ffffff;
+  
+  &:hover {
+    fill: @text-color-rose;
+  }
+  
+  &:active {
+    opacity: 0.6;
+  }
+ 
+  @media @tablet-widths {
+    padding-right: 27px;
+    margin-top: 1px;
+  }
   @media @desktop-widths {
     display: none;
   }
@@ -81,16 +121,24 @@
 }
 
 .main-nav--closed .main-nav__toggle {
-  width: 50px;
-  .toggle_icon('/img/icon-menu-burger.svg');
+  &--cross {
+    display: none;
+  }
+  &--burger {
+    display: block;
+  }
   @media @desktop-widths {
     display: none;
   }
 }
 
 .main-nav--opened .main-nav__toggle {
-  width: 25px;
-  .toggle_icon('/img/icon-menu-cross.svg');
+  &--cross {
+    display: block;
+  }
+  &--burger {
+    display: none;
+  }
 }
 
 .main-nav--opened .main-nav__header,
@@ -109,14 +157,15 @@
     display: flex;
     justify-content: space-between;
     margin-left: auto;
-    margin-right: 10px;
+    margin-right: 8px;
+    margin-top: -14px;
     border: none;
     background-color: transparent;
   }
 }
 
 .main-nav__item {
-  min-height: 48px;
+  min-height: 44px;
   text-align: center;
   box-shadow:
     0 -1px 0 0 #000000,
@@ -164,7 +213,7 @@
     }
   }
   @media @desktop-widths {
-    margin-right: 80px;
+    margin-right: 81px;
     box-shadow: none;
     white-space: nowrap;
   }
