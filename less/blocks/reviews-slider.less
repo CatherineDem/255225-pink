@@ -1,6 +1,13 @@
 @import "../global/slider.less";
 
 .reviews-slider {
+  max-width: 1200px;
+  margin: 0 auto;
+  
+  @media @desktop-widths {
+    padding: 58px 0 0;
+  }
+    
   &::before {
     display: none;
     @media @desktop-widths {
@@ -17,7 +24,15 @@
 }
 
 .reviews-slider__items {
-  margin-bottom: 34px;
+  margin-bottom: 32px;
+  
+  @media @tablet-widths {
+    margin-bottom: 34px;
+  }
+  
+  @media @desktop-widths {
+    padding: 0 120px;
+  }
 }
 
 .reviews-slider__item-wrapper {

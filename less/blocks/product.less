@@ -1,13 +1,15 @@
 .product {
-  padding: 97px 20px;
-  padding-bottom: 280px;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 97px 0;
+  padding-bottom: 282px;
   background-color: @bg-color-grey;
   background-image: url('/img/bg-triangle-white.svg'), url('/img/iphone-screen-mobile@1x.png');
   background-repeat: no-repeat;
   background-position: center top, center bottom -45px;
   background-size: auto, 158px auto;
   @media @tablet-widths {
-    min-height: 460px;
+    min-height: 507px;
     padding: 0;
     padding-top: 48px;
     background-image: url('/img/iphone-screen-3-tablet@1x.png'), url('/img/bg-triangle-white.svg') ;
@@ -15,7 +17,7 @@
     background-position: left 40px bottom, top center;
   }
   @media @desktop-widths {
-    padding-bottom: 68px;
+    padding: 0;
     margin-top: 10px;
     background-image: none, url('/img/bg-triangle-white.svg');
     background-size: 100%;
@@ -44,22 +46,27 @@
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  padding: 0;
+  padding: 0 20px;
   margin: 0;
   margin-bottom: 20px;
   list-style: none;
   @media @tablet-widths {
     width: 311px;
+    height: 401px;
     margin-left: auto;
-    margin-right: 39px;
+    margin-right: 19px;
     margin-top: 30px;
     display: flex;
-    height: 401px;
     justify-content: space-between;
   }
   @media @desktop-widths {
     width: 100%;
+    max-width: 1200px;
+    height: auto;
+    box-sizing: border-box;
     flex-direction: row;
+    align-items: flex-start;
+    padding: 358px 119px 0;
     margin: 0 auto;
   }
 }
@@ -75,10 +82,10 @@
     content: '';
     @media @desktop-widths {
       position: absolute;
-      top: -47px;
-      left: -22px;
+      top: -357px;
+      left: 3px;
       display: block;
-      width: 290px;
+      width: 292px;
       height: 300px;
       margin: 0 auto;
       background-repeat: no-repeat;
@@ -118,8 +125,7 @@
     text-align: left;
   }
   @media @desktop-widths {
-    max-width: 243px;
-    padding-top: 280px;
+    width: 292px;
     line-height: 30px;
     text-align: center;
   }
@@ -133,6 +139,7 @@
   @media @desktop-widths {
     display: block;
     max-width: 240px;
+    margin: 0 auto;
     margin-bottom: 24px;
     font-size: 30px;
   }
@@ -152,6 +159,7 @@
   }
 
   @media @desktop-widths {
+    padding: 0 22px;
     font-size: 18px;
     line-height: 30px;
     br {
