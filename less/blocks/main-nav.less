@@ -37,7 +37,9 @@
   }
 
   &--opened + .page-header--page {
-    background-position-y: -70px;
+    min-height: 169px;
+    background-position: 50% -70px;
+    background-size: auto 462px;
   }
 
   &--nojs {
@@ -49,7 +51,7 @@
 }
 
 @media @tablet-widths {
-  .main-nav--opened + .page-header {
+  .main-nav--opened + .page-header--index {
     min-height: 617px;
     background-position: 0px 72px, -250px -110px;
     background-size: auto 547px, auto 728px;
@@ -58,6 +60,11 @@
     .downloads {
       top: -330px;
     }
+  }
+  .main-nav--opened + .page-header--page {
+    min-height: 330px;
+    background-size: auto 728px;
+    background-position: 50% -112px;
   }
 }
 

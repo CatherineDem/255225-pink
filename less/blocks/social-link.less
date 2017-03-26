@@ -4,10 +4,13 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-left: -18px;
+  
+  @media @tablet-widths {
+    margin-left: -18px;
+  }
 
   @media @desktop-widths {
-    margin-left: 6px;
+    margin-left: 10px;
   }
 }
 
@@ -16,9 +19,11 @@
   display: block;
   width: 44px;
   height: 44px;
-  margin-top: -5px;
+  /*margin-top: -5px;*/
   border: 3px solid fade(@text-color-main, 10);
   border-radius: 50%;
+  background-repeat: no-repeat;
+  background-position: center;
 
   &:hover {
     border-color: @text-color-main;
@@ -28,22 +33,19 @@
     opacity: 0.3;
   }
 
-  &--tw svg {
-    position: absolute;
-    top: 16px;
-    left: 14px;
+  &--tw {
+    background-image: url('/img/icon-twitter.svg');
+    background-position: 14px 14px;
   }
 
-  &--fb svg {
-    position: absolute;
-    top: 12px;
-    left: 18px;
+  &--fb {
+    background-image: url('/img/icon-facebook.svg');
+    background-position: 18px 11px;
   }
 
-  &--yt svg {
-    position: absolute;
-    top: 15px;
-    left: 16px;
+  &--yt {
+    background-image: url('/img/icon-youtube.svg');
+    background-position: 17px 14px;
   }
 }
 
