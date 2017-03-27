@@ -1,10 +1,11 @@
 .page-footer {
   display: flex;
+  box-sizing: border-box;
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  height: 206px;
+  height: 217px;
   padding: 5px 20px;
   margin-bottom: 40px;
 
@@ -14,22 +15,17 @@
     padding: 6px 33px 0 41px;
   }
   @media @desktop-widths {
-    max-width: 1200px;
-    box-sizing: border-box;
+    max-width: 960px;
     margin: 0 auto;
-    padding: 76px 121px 70px 130px;
+    margin-bottom: 40px;
+    padding: 75px 0 0 11px;
   }
 
   &--index {
-    height: auto;
-    padding: 32px 33px 35px 40px;
     display: none;
 
     @media @tablet-widths {
       display: flex;
-      flex-direction: row;
-      padding: 41px 33px 0 41px;
-      margin-bottom: 52px;
     }
   }
 }

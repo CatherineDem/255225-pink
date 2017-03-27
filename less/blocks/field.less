@@ -20,16 +20,30 @@
     align-items: center;
     justify-content: flex-start;
   }
+  
+  &--checkbox {
+    @media @desktop-widths {
+      min-height: 44px;
+      margin-bottom: 37px;
+    }
+  }
 
   &--radio {
-    margin-top: -4px;
+    margin-top: -5px;
     margin-bottom: 38px;
+    &:last-child {
+      margin-bottom: 41px;
+    }
+      
     @media @tablet-widths {
       margin-top: 0px;
       margin-bottom: 33px;
+      &:last-child {
+        margin-bottom: 32px;
+      }
     }
     @media @desktop-widths {
-      margin-top: 2px;
+      margin-top: 4px;
       margin-bottom: 31px;
       padding-left: 25px;
     }
@@ -70,13 +84,13 @@
 .field__label-check {
   position: relative;
   display: block;
-  /*margin-top: 40px;*/
+  padding-top: 3px;
   .field-text-format();
 
   &::before {
     content: '';
     margin-right: 31px;
-    /*margin-top: -2px;*/
+    margin-top: -2px;
     display: inline-block;
     vertical-align: middle;
     width: 34px;
@@ -85,10 +99,11 @@
     background-color: @text-color-white;
     @media @tablet-widths {
       margin-right: 20px;
+      margin-top: 0px;
     }
     @media @desktop-widths {
       margin-right: 21px;
-      margin-top: -5px;
+      margin-top: -4px;
     }
   }
 
@@ -99,8 +114,8 @@
     margin-top: 1px;
   }
   @media @desktop-widths {
-    margin-top: 0px;
-    padding-top: 5px;
+    margin-top: 4px;
+    padding-top: 0px;
   }
 }
 
@@ -157,20 +172,23 @@
   &--radio + .field__label-check::before {
     margin-top: 0px;
     border-radius: 50%;
+    @media @desktop-widths {
+      margin-top: -4px;
+    }
   }
 
   &--radio:checked + .field__label-check::after {
     content: '';
     position: absolute;
-    left: 11px;
-    top: 11px;
+    left: 12px;
+    top: 14px;
     display: block;
     width: 15px;
     height: 15px;
     background-color: @text-color-rose;
     border-radius: 50%;
     @media @desktop-widths {
-      top: 16px;
+      top: 7px;
     }
   }
 
@@ -178,13 +196,19 @@
     content: '';
     position: absolute;
     left: 8px;
-    top: 9px;
+    top: 11px;
     display: block;
     width: 22px;
     height: 16px;
     background-image: url('/img/tick.svg');
     background-repeat: no-repeat;
     background-position: center;
+    @media @tablet-widths {
+      top: 12px;
+    }
+    @media @desktop-widths {
+      top: 7px;
+    }
   }
 }
 
