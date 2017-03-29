@@ -12,10 +12,3 @@ navToggle.addEventListener('click', function() {
     navMain.classList.remove('main-nav--opened');
   }
 });
-
-window.addEventListener('resize', function() {
-  if ((window.innerWidth>=980) && (navMain.classList.contains('main-nav--opened'))) {
-    navMain.classList.add('main-nav--closed');
-    navMain.classList.remove('main-nav--opened');
-  }
-});
