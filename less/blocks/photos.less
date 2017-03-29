@@ -1,6 +1,8 @@
 .photos {
+  max-width: 940px;
   padding: 0;
   margin: 0 auto;
+  margin-bottom: -2px;
   list-style: none;
   @media @tablet-widths {
     display: flex;
@@ -8,9 +10,11 @@
     justify-content: space-between;
     align-content: space-between;
     padding: 0 40px;
+    margin-bottom: -45px;
   }
   @media @desktop-widths {
     padding: 0 10px;
+    margin-bottom: -88px;
   }
 }
 
@@ -21,9 +25,19 @@
   padding: 0;
   margin-bottom: 20px;
   background-color: @bg-color-grey;
+  &:last-child {
+    @media @mobile-widths-only {
+      padding-top: 2px;
+      margin-bottom: -4px;
+    }
+  }
+  
   @media @tablet-widths {
     width: 300px;
     margin: 0;
+    margin-bottom: 19px;
+  }
+  @media @desktop-widths {
     margin-bottom: 54px;
   }
 }

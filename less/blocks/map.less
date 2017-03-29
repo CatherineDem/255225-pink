@@ -1,34 +1,48 @@
 .map {
   width: 100%;
   min-height: 205px;
-  margin-top: -55px;
+  margin-top: -57px;
   margin-bottom: 1px;
-  background-image: url('/img/bg-triangle-white-footer.svg'), url('/img/icon-map-marker.svg'), url('/img/bg-map-mobile@1x.png');
-  background-position: top center,top 94px center, center;
-  background-size: 100%, auto, cover;
+  background-image: url('/img/icon-map-marker.svg'), url('/img/bg-map-mobile@1x.png');
+  background-position: top 96px center, center;
+  background-size: auto, cover;
   background-repeat: no-repeat;
   @media @tablet-widths {
     min-height: 377px;
     margin-top: -30px;
     margin-bottom: 35px;
-    background-image: url('/img/bg-triangle-white-footer.svg'), url('/img/icon-map-marker.svg'), url('/img/bg-map-tablet@1x.jpg');
-    background-position: top center, center top 197px, left 0px top -344px;
+    background-image: url('/img/icon-map-marker.svg'), url('/img/bg-map-tablet@1x.jpg');
+    background-position: center top 197px, left 0px top -344px;
   }
   @media @desktop-widths {
-    min-height: 512px;
-    margin-top: -60px;
+    min-height: 501px;
+    margin-top: -49px;
     margin-bottom: 1px;
-    background-image: url('/img/bg-triangle-white-footer.svg'), url('/img/icon-map-marker.svg'), url('/img/bg-map-desktop@1x.jpg');
-    background-position: top center,center top 275px, center top -266px;
+    background-image: url('/img/icon-map-marker.svg'), url('/img/bg-map-desktop@1x.jpg');
+    background-position: center top 264px, center top -277px;
   }
 
   @media @retina-mobile {
-    background-image: url('/img/bg-triangle-white-footer.svg'), url('/img/icon-map-marker.svg'), url('/img/bg-map-mobile@2x.jpg');
+    background-image: url('/img/icon-map-marker.svg'), url('/img/bg-map-mobile@2x.jpg');
   }
   @media @retina-tablet {
-    background-image: url('/img/bg-triangle-white-footer.svg'), url('/img/icon-map-marker.svg'), url('/img/bg-map-tablet@2x.jpg');
+    background-image: url('/img/icon-map-marker.svg'), url('/img/bg-map-tablet@2x.jpg');
   }
   @media @retina-desktop {
-    background-image: url('/img/bg-triangle-white-footer.svg'), url('/img/icon-map-marker.svg'), url('/img/bg-map-desktop@2x.jpg');
+    background-image: url('/img/icon-map-marker.svg'), url('/img/bg-map-desktop@2x.jpg');
+  }
+}
+
+.map__triangle {
+  width: 100%;
+  svg {
+    width: 100%;
+    height: 37px;
+    @media @tablet-widths {
+      height: 72px;
+    }
+    @media @desktop-widths {
+      height: 104px;
+    }
   }
 }

@@ -41,6 +41,7 @@
     color: @text-color-rose;
     border: 3px solid @text-color-rose;
     background-color: transparent;
+    margin-bottom: 11px;
 
     &:hover {
       color: @text-color-white;
@@ -49,6 +50,17 @@
 
     &:active {
       color: fade(@text-color-white, 30);
+    }
+    
+    @media @tablet-widths {
+      width: 260px;
+      margin-bottom: 25px;
+    }
+    @media @desktop-widths {
+      width: 183px;
+      margin-bottom: 0;
+      margin-left: 13px;
+      font-size: 18px;
     }
   }
 
@@ -66,6 +78,14 @@
       color: fade(@text-color-white, 30);
       border: 3px solid fade(@text-color-main, 0);
       background-color: fade(@text-color-main, 30);
+    }
+    @media @tablet-widths {
+      width: 260px;
+    }
+    @media @desktop-widths {
+      width: 183px;
+      margin: 0;
+      font-size: 18px;
     }
   }
 }

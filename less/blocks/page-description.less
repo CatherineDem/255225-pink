@@ -1,10 +1,11 @@
 .page-description {
-  padding: 45px 0 14px;
+  margin-top: 45px;
+  margin-bottom: 14px;
   @media @tablet-widths {
-    padding: 90px 0 12px;
+    margin: 90px 0 12px;
   }
   @media @desktop-widths {
-    padding: 92px 0 43px;
+    margin: 92px 0 43px;
   }
 }
 
@@ -23,12 +24,6 @@
     }
   }
 
-  br {
-    display: none;
-    @media @desktop-widths {
-      display: block;
-    }
-  }
   @media @tablet-widths {
     max-width: 490px;
     font-size: 18px;
@@ -36,4 +31,18 @@
   @media @desktop-widths {
     max-width: 800px;
   }
+}
+
+.page-description__delim-top {
+  display: block;
+  @media @tablet-widths {
+    display: none;
+  }
+  @media @desktop-widths {
+    display: block;
+  }
+}
+
+.page-description__delim-bottom {
+  display: block;
 }
