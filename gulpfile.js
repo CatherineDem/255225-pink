@@ -112,7 +112,7 @@ gulp.task("copy", function() {
   ], {
   base: "."
   })
- .pipe(gulp.dest("build"));
+  .pipe(gulp.dest("build"));
 });
 
 gulp.task("clean", function() {
