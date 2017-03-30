@@ -1,9 +1,14 @@
 .post {
+  margin-top: 42px;
   background-color: @bg-color-grey;
+  @media @tablet-widths {
+    margin-top: 69px;
+  }
   @media @desktop-widths {
     box-sizing: border-box;
-    max-width: 960px;
-    padding: 0 10px;
+    max-width: 940px;
+    padding: 0;
     margin: 0 auto;
+    margin-top: 65px;
   }
 }

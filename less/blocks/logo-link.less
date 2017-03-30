@@ -1,9 +1,48 @@
 .logo-link {
   display: block;
-  @media @desktop-widths {
-    width: 152px;
-    height: 49px;
-    left: 129px;
+  position: absolute;
+  left: 21px;
+  top: 22px;
+  cursor: pointer;
+  @media @tablet-widths {
+    left: 40px;
     top: 27px;
+  }
+  @media @desktop-widths {
+    position: relative;
+    left: -8px;
+    top: -6px;
+  }
+}
+
+.logo-link__icon {
+  fill: #ffffff;
+  vertical-align: baseline;
+  &--mobile {
+    display: none;
+    @media @mobile-widths-only {
+      display: inline-block;
+    }
+  }
+  &--tablet {
+    display: none;
+    @media @tablet-widths {
+      display: inline-block;
+    }
+    @media @desktop-widths {
+      display: none;
+    }
+  }
+  &--desktop {
+    display: none;
+    @media @desktop-widths {
+      display: inline-block;
+    }
+  }
+  &:hover {
+      fill: #d22856;
+    }
+  &:active {
+    fill: fade(#ffffff, 30);
   }
 }

@@ -1,7 +1,11 @@
 .page-description {
-  padding: 56px 0;
+  margin-top: 45px;
+  margin-bottom: 14px;
   @media @tablet-widths {
-    padding: 100px 0;
+    margin: 90px 0 12px;
+  }
+  @media @desktop-widths {
+    margin: 92px 0 43px;
   }
 }
 
@@ -17,15 +21,10 @@
     display: none;
     @media @tablet-widths {
       display: inline-block;
+      vertical-align: baseline;
     }
   }
 
-  br {
-    display: none;
-    @media @desktop-widths {
-      display: block;
-    }
-  }
   @media @tablet-widths {
     max-width: 490px;
     font-size: 18px;
@@ -33,4 +32,18 @@
   @media @desktop-widths {
     max-width: 800px;
   }
+}
+
+.page-description__delim-top {
+  display: block;
+  @media @tablet-widths {
+    display: none;
+  }
+  @media @desktop-widths {
+    display: block;
+  }
+}
+
+.page-description__delim-bottom {
+  display: block;
 }

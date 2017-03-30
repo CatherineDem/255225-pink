@@ -1,14 +1,49 @@
 .map {
   width: 100%;
   min-height: 205px;
-  background-image: url('/img/bg-map-mobile@1x.png');
-  background-position: center center;
-  background-size: cover;
+  margin-top: -57px;
+  margin-bottom: 1px;
+  background-color: @bg-color-grey;
+  background-image: url('/img/icon-map-marker.svg'), url('/img/bg-map-mobile@1x.png');
+  background-position: top 96px center, center;
+  background-size: auto, cover;
   background-repeat: no-repeat;
   @media @tablet-widths {
-    min-height: 380px;
+    min-height: 377px;
+    margin-top: -67px;
+    margin-bottom: 35px;
+    background-image: url('/img/icon-map-marker.svg'), url('/img/bg-map-tablet@1x.jpg');
+    background-position: center top 197px, left 0px top -344px;
   }
   @media @desktop-widths {
-    min-height: 503px;
+    min-height: 501px;
+    margin-top: -49px;
+    margin-bottom: 1px;
+    background-image: url('/img/icon-map-marker.svg'), url('/img/bg-map-desktop@1x.jpg');
+    background-position: center top 264px, center top -277px;
+  }
+
+  @media @retina-mobile {
+    background-image: url('/img/icon-map-marker.svg'), url('/img/bg-map-mobile@2x.jpg');
+  }
+  @media @retina-tablet {
+    background-image: url('/img/icon-map-marker.svg'), url('/img/bg-map-tablet@2x.jpg');
+  }
+  @media @retina-desktop {
+    background-image: url('/img/icon-map-marker.svg'), url('/img/bg-map-desktop@2x.jpg');
+  }
+}
+
+.map__triangle {
+  width: 100%;
+  svg {
+    width: 100%;
+    height: 37px;
+    @media @tablet-widths {
+      height: 72px;
+    }
+    @media @desktop-widths {
+      height: 104px;
+    }
   }
 }

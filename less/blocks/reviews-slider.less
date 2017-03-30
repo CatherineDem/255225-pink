@@ -1,53 +1,86 @@
 @import "../global/slider.less";
 
 .reviews-slider {
+  max-width: 1200px;
+  margin: 0 auto;
+
+  @media @desktop-widths {
+    padding: 58px 0 0;
+  }
+
   &::before {
     display: none;
     @media @desktop-widths {
       content: '';
       display: block;
-      width: 80px;
+      width: 85px;
       height: 70px;
       margin: 0 auto;
-      background-color: @bg-color-grey;
-      /*background-image: url('/img/quotes.svg');*/
+      background-image: url('/img/icon-quotes.svg');
       background-repeat: no-repeat;
-      background-position: left top;
+      background-position: left 5px top;
     }
   }
 }
 
 .reviews-slider__items {
-  margin-bottom: 40px;
+  margin-bottom: 32px;
+
+  @media @tablet-widths {
+    margin-bottom: 34px;
+  }
+
   @media @desktop-widths {
-    padding: 50px 200px;
+    padding: 0 120px;
   }
 }
 
 .reviews-slider__item-wrapper {
+  position: relative;
+  width: 100%;
   display: flex;
   align-items: center;
   @media @tablet-widths {
     margin-bottom: 20px;
   }
+  @media @desktop-widths {
+    margin-bottom: 0px;
+  }
 }
 
 .reviews-slider__toggle-btn {
   display: none;
-  width: 25px;
-  height: 50px;
+  position: absolute;
   margin-top: -20px;
+  top: 90px;
   @media @desktop-widths {
     display: block;
   }
 
   &--prev {
-    background-color: @bg-color-grey;
+    left: 10px;
   }
 
   &--next {
     order: 3;
-    background-color: @bg-color-grey;
+    right: 10px;
+  }
+
+  svg {
+    fill: fade(@text-color-main, 30);
+  }
+
+  &:hover {
+    cursor: pointer;
+    svg {
+      fill: fade(@text-color-main, 60);
+    }
+  }
+
+  &:active {
+    svg {
+      fill: fade(@text-color-main, 10);
+    }
   }
 }
 
@@ -76,7 +109,13 @@
   font-style: normal;
   margin-bottom: 20px;
   @media @tablet-widths {
+    font-size: 20px;
+    margin-top: 14px;
     margin-bottom: 0;
+  }
+  @media @desktop-widths {
+    font-size: 24px;
+    margin-bottom: -2px;
   }
 }
 
@@ -87,6 +126,7 @@
   line-height: 30px;
   @media @tablet-widths {
     display: block;
+    margin-top: 3px;
     font-size: 14px;
   }
   @media @desktop-widths {
@@ -97,6 +137,7 @@
 .reviews-slider__author-text {
   order: 2;
   padding: 0 20px;
+  margin-top: -7px;
   font-size: 14px;
   line-height: 30px;
 
@@ -106,9 +147,12 @@
     }
   }
   @media @tablet-widths {
+    padding: 0 40px;
     font-size: 18px;
   }
-
+  @media @desktop-widths {
+    padding: 50px 100px 23px;
+  }
 }
 
 .reviews-slider__toggles {

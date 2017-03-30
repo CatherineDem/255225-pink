@@ -1,15 +1,43 @@
 .copyright {
   display: block;
-  width: 130px;
+  width: 136px;
+  padding: 0;
+  margin: 0;
+  margin-left: 5px;
   font-size: 14px;
   line-height: 18px;
+  @media @tablet-widths {
+    margin-left: 0;
+  }
+  @media @desktop-widths {
+    width: 163px;
+    font-size: 18px;
+  }
 }
 
 .copyright__academy-logo {
-  img {
+  display: inline-block;
+  vertical-align: baseline;
+  width: 40px;
+  height: auto;
+  cursor: pointer;
+  svg {
+    fill: @text-color-rose;
     display: inline-block;
     vertical-align: middle;
-    margin-left: auto;
     padding: 0;
+    margin: 0;
+    margin-left: 4px;
+
+    @media @desktop-widths {
+      margin-left: 2px;
+      margin-top: 3px;
+    }
+  }
+  &:hover svg {
+    fill: @text-color-main;
+  }
+  &:active svg {
+    opacity: 0.3;
   }
 }

@@ -2,18 +2,20 @@
   height: 400px;
   padding: 0;
   margin:0 auto;
-  padding-top: 500px;
+  padding-top: 490px;
   box-sizing: border-box;
   @media @tablet-widths {
     position: absolute;
-    top: 250px;
-    left: 10px;
+    top: 211px;
+    left: 25px;
     max-width: 330px;
     padding-top: 0;
   }
   @media @desktop-widths {
-    min-height: 505px;
-    left: 42px;
+    max-width: 302px;
+    min-height: 512px;
+    top: 218px;
+    left: 8px;
   }
 }
 
@@ -22,27 +24,78 @@
   width: 200px;
   margin: 0 auto;
   padding: 0;
-  margin-bottom: 30px;
+  margin-bottom: 31px;
   font-size: 40px;
-  line-height: 54px;
+  line-height: 48px;
   font-weight: 300;
   text-align: center;
   @media @tablet-widths {
     display: block;
   }
+  @media @desktop-widths {
+    width: 240px;
+    font-size: 50px;
+    line-height: 60px;
+    margin-bottom: 50px;
+  }
 }
 
 .downloads__items {
-  max-width: 320px;
+  display: block;
+  max-width: 206px;
   margin: 0 auto;
-  margin-bottom: 30px;
+  margin-bottom: 23px;
+  padding: 0;
   list-style: none;
-  display: flex;
-  justify-content: space-between;
+  @media @tablet-widths {
+    margin-bottom: 36px;
+  }
+  @media @desktop-widths {
+    margin-bottom: 56px;
+  }
 }
 
 .downloads__item {
-  margin-right: 32px;
+  display: inline-block;
+  vertical-align: text-bottom;
+  margin-right: 29px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.downloads__btn {
+  display: block;
+  background-repeat: no-repeat;
+  background-position: center center;
+
+  &--ios {
+    width: 47px;
+    height: 57px;
+    background-image: url('/img/logo-apple.svg');
+  }
+
+  &--android {
+    width: 43px;
+    height: 48px;
+    background-image: url('/img/logo-android.svg');
+    margin-left: 1px;
+    @media @tablet-widths {
+      padding-top: 5px;
+    }
+    @media @desktop-widths {
+      padding-top: 0;
+    }
+  }
+
+  &--win {
+    width: 44px;
+    height: 42px;
+    background-image: url('/img/logo-microsoft.svg');
+    margin-left: 4px;
+    padding-top: 5px;
+  }
 }
 
 .downloads__description{
@@ -55,6 +108,7 @@
   line-height: 24px;
   text-align: center;
   @media @tablet-widths {
+    width: 100%;
     font-size: 18px;
     line-height: 24px;
   }

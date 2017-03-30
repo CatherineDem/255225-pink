@@ -1,6 +1,7 @@
 @bg-modal-popup: #ffffff;
 
 .modal-popup {
+  display: none;
   width: 100%;
   box-sizing: border-box;
   margin: 0 auto;
@@ -19,6 +20,9 @@
     @media @desktop-widths {
       width: 462px;
     }
+  }
+  &--show {
+    display: block;
   }
 }
 

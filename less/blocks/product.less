@@ -1,20 +1,44 @@
 .product {
-  padding: 50px 20px;
-  padding-bottom: 280px;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 97px 0;
+  padding-bottom: 282px;
   background-color: @bg-color-grey;
-  background-image: url('/img/iphone-screen-mobile@1x.png');
+  background-image: url('/img/bg-triangle-white.svg'), url('/img/iphone-screen-mobile@1x.png');
   background-repeat: no-repeat;
-  background-position: center bottom -40px;
+  background-position: center top, center bottom -45px;
+  background-size: auto, 158px auto;
   @media @tablet-widths {
-    min-height: 485px;
+    min-height: 507px;
     padding: 0;
-    padding-top: 80px;
-    background-size: 271px auto;
-    background-position: left 40px bottom -60px;
+    padding-top: 48px;
+    background-image: url('/img/iphone-screen-3-tablet@1x.png'), url('/img/bg-triangle-white.svg') ;
+    background-size: 269px auto, auto;
+    background-position: left 40px bottom, top center;
   }
   @media @desktop-widths {
-    padding-bottom: 68px;
-    background-image: none;
+    padding: 0;
+    margin-top: 10px;
+    background-image: none, url('/img/bg-triangle-white.svg');
+    background-size: 100%;
+  }
+}
+
+@media @retina-mobile {
+  .product {
+    background-image: url('/img/bg-triangle-white.svg'), url('/img/iphone-screen-mobile@2x.png');
+  }
+}
+
+@media @retina-tablet {
+  .product {
+    background-image: url('/img/iphone-screen-3-tablet@2x.png'), url('/img/bg-triangle-white.svg');
+  }
+}
+
+@media @retina-desktop {
+  .product {
+    background-image: none, url('/img/bg-triangle-white.svg');
   }
 }
 
@@ -22,19 +46,27 @@
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  padding: 0;
+  padding: 0 20px;
   margin: 0;
   margin-bottom: 20px;
   list-style: none;
   @media @tablet-widths {
     width: 311px;
+    height: 401px;
     margin-left: auto;
-    margin-right: 70px;
+    margin-right: 19px;
     margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
   }
   @media @desktop-widths {
-    width: 90%;
+    width: 100%;
+    max-width: 1200px;
+    height: auto;
+    box-sizing: border-box;
     flex-direction: row;
+    align-items: flex-start;
+    padding: 358px 119px 0;
     margin: 0 auto;
   }
 }
@@ -50,21 +82,50 @@
     content: '';
     @media @desktop-widths {
       position: absolute;
-      top: 0;
-      left: -17px;
+      top: -357px;
+      left: 3px;
       display: block;
-      width: 290px;
-      height: 308px;
+      width: 292px;
+      height: 300px;
       margin: 0 auto;
-      background-color: @text-color-rose;
+      background-repeat: no-repeat;
+      background-position: center bottom;
+      background-size: 100%;
     }
   }
+
+  &:nth-child(1)::before {
+    @media @desktop-widths {
+      background-image: url('/img/iphone-screen-1-desktop@1x.png');
+    }
+    @media @retina-desktop {
+      background-image: url('/img/iphone-screen-1-desktop@2x.png');
+    }
+  }
+
+  &:nth-child(2)::before {
+    @media @desktop-widths {
+      background-image: url('/img/iphone-screen-2-desktop@1x.png');
+    }
+    @media @retina-desktop {
+      background-image: url('/img/iphone-screen-2-desktop@2x.png');
+    }
+  }
+
+  &:nth-child(3)::before {
+    @media @desktop-widths {
+      background-image: url('/img/iphone-screen-3-desktop@1x.png');
+    }
+    @media @retina-desktop {
+      background-image: url('/img/iphone-screen-3-desktop@2x.png');
+    }
+  }
+
   @media @tablet-widths {
     text-align: left;
   }
   @media @desktop-widths {
-    max-width: 243px;
-    padding-top: 310px;
+    width: 292px;
     line-height: 30px;
     text-align: center;
   }
@@ -73,7 +134,13 @@
 .product__item-title {
   font-size: 18px;
   font-weight: bold;
+  padding-bottom: 0;
+  margin-bottom: -2px;
   @media @desktop-widths {
+    display: block;
+    max-width: 240px;
+    margin: 0 auto;
+    margin-bottom: 24px;
     font-size: 30px;
   }
 }
@@ -82,8 +149,21 @@
   font-size: 14px;
   line-height: 24px;
   font-weight: normal;
+  br {
+    display: none;
+  }
+  @media @tablet-widths {
+    br {
+      display: block;
+    }
+  }
+
   @media @desktop-widths {
+    padding: 0 22px;
     font-size: 18px;
     line-height: 30px;
+    br {
+      display: none;
+    }
   }
 }

@@ -1,15 +1,16 @@
 .photo-description {
   margin: 0 auto;
-  padding: 20px;
+  padding: 18px 17px 20px;
   @media @tablet-widths {
-    min-height: 151px;
-    box-sizing: border-box;
+    min-height: 110px;
+    flex-direction: column;
     display: flex;
     flex-wrap: wrap;
+    padding: 24px 30px 22px 27px;
   }
   @media @desktop-widths {
-    min-height: 171px;
-    padding: 30px 28px;
+    min-height: 109px;
+    padding: 25px 27px 22px 28px;
   }
 }
 
@@ -31,23 +32,26 @@
 }
 
 .photo-description__text {
-  width: 100%;
-  margin-top: 0;
+  margin: 0;
+  margin-bottom: 9px;
   font-size: 14px;
   line-height: 24px;
+  @media @desktop-widths {
+    margin-top: -1px;
+  }
 }
 
 .photo-description__likes {
-  position: relative;
   width: 100%;
-  padding-left: 30px;
+  position: relative;
+  padding-left: 32px;
   font-size: 12px;
   line-height: 24px;
   text-transform: uppercase;
   color: @text-color-rose;
   white-space: nowrap;
   @media @tablet-widths {
-    align-self: flex-end;
+    margin-top: auto;
     padding: 0;
   }
 }
@@ -55,8 +59,8 @@
 
 .photo-description__like-btn {
   position: absolute;
-  left: 0;
-  top: 4px;
+  left: 1px;
+  top: 5px;
   display: block;
   width: 15px;
   height: 14px;
@@ -66,20 +70,31 @@
   @media @tablet-widths {
     left: auto;
     right: 0;
+    top: 3px;
   }
-
+  @media @desktop-widths {
+    right: 3px;
+    top: 4px;
+  }
 }
 
 .photo-description--panorama {
   background-color: @bg-color-grey;
   @media @tablet-widths {
+    min-height: auto;
     display: flex;
     flex-wrap: wrap;
+    flex-direction: row;
     align-content: space-between;
     justify-content: space-between;
     align-items: flex-start;
-    padding: 30px 40px;
+    padding: 23px 28px 14px;
     margin: 0;
+  }
+  @media @desktop-widths {
+    max-width: 886px;
+    margin: 0 auto;
+    padding-top: 24px;
   }
 
   .photo-description__auth {
@@ -95,6 +110,9 @@
       order: 2;
       padding-right: 30px;
       padding-left: 0;
+    }
+    @media @desktop-widths {
+      padding-right: 35px;
     }
   }
 

@@ -1,6 +1,6 @@
 .price-table {
   display: table;
-  width: 840px;
+  width: 830px;
   margin: 0 auto 0 50%;
   margin-bottom: 40px;
   border-collapse: collapse;
@@ -44,9 +44,9 @@
 .price-table__header-cell {
   display: table-cell;
   position: relative;
-  padding: 19px;
+  padding: 16px 19px 20px;
   font-size: 18px;
-  line-height: 30px;
+  line-height: 31px;
   font-weight: bold;
   text-align: center;
   text-transform: uppercase;
@@ -59,33 +59,35 @@
     &::before {
       content: 'ХИТ';
       position: absolute;
-      left: -25px;
-      top: 10px;
-      width: 100px;
+      left: -32px;
+      top: 13px;
+      width: 109px;
       font-size: 14px;
-      line-height: 30px;
+      line-height: 28px;
       font-weight: 400;
       background-color: @text-color-rose;
       color: @text-color-white;
       transform: rotate(-45deg);
       @media @tablet-widths {
-        top: 1px;
-        left: -30px;
+        top: 4px;
+        left: -34px;
       }
       @media @desktop-widths {
-        top: 10px;
-        left: -25px;
+        top: 12px;
+        left: -30px;
       }
     }
   }
   @media @tablet-widths {
     font-size: 16px;
-    padding: 9px 0;
+    line-height: 28px;
+    padding: 13px 0 8px;
     min-width: 130px;
   }
   @media @desktop-widths {
     font-size: 18px;
-    padding: 19px 22px;
+    line-height: 32px;
+    padding: 15px 22px 17px;
   }
 }
 
@@ -124,7 +126,7 @@
 .price-table__content-cell {
   display: table-cell;
   box-sizing: border-box;
-  padding: 14px 30px;
+  padding: 14px 21px;
   font-size: 14px;
   line-height: 30px;
   font-weight: normal;
@@ -132,16 +134,16 @@
   border: 2px solid @table-border-color;
   background-color: #ffffff;
   background-repeat: no-repeat;
-  background-position: right 20px center;
+  background-position: right 15px center;
 
   &--yes {
     background-image: url('/img/icon-yes.svg');
-    background-size: 32px 23px;
+    background-size: 32px 22px;
   }
 
   &--no {
     background-image: url('/img/icon-no.svg');
-    background-size: 30px 27px;
+    background-size: 32px 26px;
   }
 
   &:not(:first-child) {
@@ -150,10 +152,10 @@
     }
   }
   @media @tablet-widths {
-    padding: 5px 10px;
+    padding: 7px 2px 3px 16px;
     background-position: 50% 50%;
   }
   @media @desktop-widths {
-    padding: 10px 15px;
+    padding: 15px 5px 7px 23px;
   }
 }
