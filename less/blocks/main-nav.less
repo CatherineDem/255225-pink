@@ -30,15 +30,21 @@
 
   &--opened {
     position: relative;
+    @media @desktop-widths {
+      position: absolute;
+    }
   }
 
   &--opened + .page-header {
     min-height: 664px;
     background-position: left 110px, 50% -70px;
-    background-size: 80%, auto 462px;
+    background-size: auto 288px, auto 462px;
 
     .downloads {
       padding-top: 421px;
+      @media @desktop-widths {
+        padding-top: 0;
+      }
     }
   }
 
@@ -73,6 +79,22 @@
     padding-top: 83px;
     background-size: auto 728px;
     background-position: 50% -112px;
+  }
+}
+
+@media @desktop-widths {
+  .main-nav--opened + .page-header--index {
+    min-height: 853px;
+    background-position: 98% bottom, center;
+    /*background-position: 145px bottom, center;*/
+    background-size: auto 646px, auto 856px;
+    .downloads {
+      position: absolute;
+      top: 218px;
+    }
+  }
+  .main-nav--opened + .page-header--page {
+    padding-top: 113px;
   }
 }
 
