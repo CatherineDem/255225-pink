@@ -4,8 +4,8 @@
 
 .font(@fontName; @urlName: @fontName; @weight: normal; @style: normal) {
   font-family: '@{fontName}';
-  src: url('/fonts/@{urlName}.woff') format('woff'),
-    url('/fonts/@{urlName}.woff') format('woff2');
+  src: url('../fonts/@{urlName}.woff') format('woff'),
+    url('../fonts/@{urlName}.woff2') format('woff2');
   font-weight: @weight;
   font-style: @style;
 }
