@@ -17,7 +17,7 @@
   margin: 0 auto;
   margin-bottom: 32px;
   font-size: 24px;
-  line-height: 30px;
+  line-height: 29px;
   font-weight: 300;
   text-align: center;
   @media @tablet-widths {
@@ -61,8 +61,15 @@
   width: auto;
   max-width: 245px;
   margin: 0 auto;
-  margin-bottom: 21px;
+  margin-bottom: 23px;
   text-align: center;
+  &:nth-child(2) {
+    @media @mobile-widths-only{
+      margin-top: -3px;
+      margin-bottom: 24px;
+      padding-left: 4px;
+    }
+  }
   @media @tablet-widths {
     margin-bottom: 48px;
     min-width: 240px;

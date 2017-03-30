@@ -2,31 +2,31 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Пинк - Конкурс</title>
     <link href="css/style.min.css" rel="stylesheet">
   </head>
   <body>
     <nav class="main-nav main-nav--closed main-nav--nojs">
-      <div class="container--menu">
+      <div class="container container--menu">
         <div class="main-nav__header">
           <a class="logo-link" href="index.html">
             <svg width="74.426" height="22.859" class="logo-link__icon logo-link__icon--mobile">
-              <use xlink:href='#logo-link-mobile'/>
+              <use xlink:href="#logo-link-mobile"/>
             </svg>
             <svg width="146.3" height="40.375" class="logo-link__icon logo-link__icon--tablet">
-              <use xlink:href='#logo-link-tablet'/>
+              <use xlink:href="#logo-link-tablet"/>
             </svg>
             <svg width="146.3" height="40.375" class="logo-link__icon logo-link__icon--desktop">
-              <use xlink:href='#logo-link-desktop'/>
+              <use xlink:href="#logo-link-desktop"/>
             </svg>
           </a>
           <a class="main-nav__toggle" aria-label="Закрыть">
             <svg width="49.945" height="24.007" class="main-nav__toggle main-nav__toggle--burger">
-              <use xlink:href='#menu-burger'/>
+              <use xlink:href="#menu-burger"/>
             </svg>
             <svg width="23.867" height="23.867" class="main-nav__toggle main-nav__toggle--cross">
-              <use xlink:href='#menu-cross'/>
+              <use xlink:href="#menu-cross"/>
             </svg>
           </a>
         </div>
@@ -49,7 +49,7 @@
         <p class="page-description__text">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! <span>Пожалуйста, заполните форму ниже: </span></p>
       </section>
       <div class="container">
-        <section class="page-form">
+        <section>
           <h2 class="visually-hidden">Форма</h2>
           <form class="main-form" name="pink-form" action="https://echo.htmlacademy.ru/" method="post" >
             <div class="main-form__wrapper">
@@ -137,7 +137,7 @@
               <fieldset class="fieldgroup">
                 <p class="fieldgroup__title">Опишите свои эмоции</p>
                 <div class="fieldgroup-wrapper">
-                  <textarea class="field__message" name="emotiontext" id="emotiontext" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+                  <textarea class="fieldgroup__message" name="emotiontext" id="emotiontext" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
                 </div>
               </fieldset>
             </div>
@@ -152,10 +152,10 @@
     <footer class="page-footer">
       <a class="footer-logo" aria-label="Pink">
         <svg class="footer-logo__icon footer-logo__icon--tablet" width="146.3" height="40.375">
-          <use xlink:href='#footer-logo-tablet'/>
+          <use xlink:href="#footer-logo-tablet"/>
         </svg>
         <svg class="footer-logo__icon footer-logo__icon--desktop" width="146.3" height="40.375">
-          <use xlink:href='#footer-logo-desktop'/>
+          <use xlink:href="#footer-logo-desktop"/>
         </svg>
       </a>
       <div class="social-link">
@@ -167,7 +167,7 @@
         Разработано
         <a class="copyright__academy-logo" aria-label="HTML Academy">
           <svg width="40" height="40">
-            <use xlink:href='#academy-logo'/>
+            <use xlink:href="#academy-logo"/>
           </svg>
         </a>
       </p>

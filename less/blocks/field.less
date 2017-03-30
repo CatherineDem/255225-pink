@@ -46,8 +46,8 @@
       }
     }
     @media @desktop-widths {
-      margin-top: 4px;
-      margin-bottom: 23px;
+      margin-top: 0px;
+      margin-bottom: 26px;
       padding-left: 25px;
     }
   }
@@ -212,44 +212,5 @@
     @media @desktop-widths {
       top: 7px;
     }
-  }
-}
-
-.field__message {
-  display: block;
-  width: 100%;
-  min-height: 200px;
-  box-sizing: border-box;
-  padding: 14px 19px;
-  margin: 0 auto;
-  font: inherit;
-  .field-text-format();
-  border: 2px solid @table-border-color;
-  resize: none;
-  @media @tablet-widths {
-    max-width: 500px;
-    min-height: 193px;
-    margin-bottom: 35px;
-    padding-left: 17px;
-  }
-  @media @desktop-widths {
-    max-width: 820px;
-    margin-top: -8px;
-    min-height: 128px;
-    margin-bottom: 21px;
-    padding-left: 18px;
-  }
-
-  &::placeholder {
-    color: @text-color-main;
-  }
-
-  &:hover {
-    border-color: @text-color-main;
-  }
-
-  &:focus {
-    border-color: @text-color-rose;
-    outline: none;
   }
 }
