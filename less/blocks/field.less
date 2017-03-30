@@ -22,9 +22,12 @@
   }
 
   &--checkbox {
+    @media @tablet-widths {
+      margin-bottom: 32px;
+    }
     @media @desktop-widths {
       min-height: 44px;
-      margin-bottom: 37px;
+      margin-bottom: 32px;
     }
   }
 
@@ -37,14 +40,14 @@
 
     @media @tablet-widths {
       margin-top: 0px;
-      margin-bottom: 33px;
+      margin-bottom: 23px;
       &:last-child {
         margin-bottom: 32px;
       }
     }
     @media @desktop-widths {
       margin-top: 4px;
-      margin-bottom: 31px;
+      margin-bottom: 23px;
       padding-left: 25px;
     }
   }
@@ -99,7 +102,7 @@
     background-color: @text-color-white;
     @media @tablet-widths {
       margin-right: 20px;
-      margin-top: 0px;
+      margin-top: -2px;
     }
     @media @desktop-widths {
       margin-right: 21px;
@@ -148,11 +151,11 @@
     margin-top: 0;
 
     &--phone {
-      background: url(/img/icon-phone.svg) no-repeat right 20px center, linear-gradient(-90deg, #e5e5e5 60px, #e5e5e5 60px, #fff 0);
+      background: url('../img/icon-phone.svg') no-repeat right 20px center, linear-gradient(-90deg, #e5e5e5 60px, #e5e5e5 60px, #fff 0);
     }
 
     &--email {
-      background: url(/img/icon-mail.svg) no-repeat right 20px center, linear-gradient(-90deg, #e5e5e5 60px, #e5e5e5 60px, #fff 0);
+      background: url('../img/icon-mail.svg') no-repeat right 20px center, linear-gradient(-90deg, #e5e5e5 60px, #e5e5e5 60px, #fff 0);
     }
 
     &--phone,
@@ -200,7 +203,7 @@
     display: block;
     width: 22px;
     height: 16px;
-    background-image: url('/img/tick.svg');
+    background-image: url('../img/tick.svg');
     background-repeat: no-repeat;
     background-position: center;
     @media @tablet-widths {
@@ -225,9 +228,8 @@
   resize: none;
   @media @tablet-widths {
     max-width: 500px;
-    margin-top: -5px;
     min-height: 193px;
-    margin-bottom: 31px;
+    margin-bottom: 35px;
     padding-left: 17px;
   }
   @media @desktop-widths {

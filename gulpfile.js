@@ -25,14 +25,14 @@ gulp.task("style", function() {
         "last 2 versions"
       ]}),
       mqpacker({
-        sort: false
+        sort: true
       })
     ]))
     .pipe(gulp.dest("build/css"))
     .pipe(minify())
     .pipe(rename("style.min.css"))
-    .pipe(gulp.dest("build/css"));
-    /*.pipe(server.stream());*/
+    .pipe(gulp.dest("build/css"))
+    .pipe(server.stream());
 });
 
 gulp.task("compress", function() {
@@ -58,7 +58,7 @@ gulp.task("images", function() {
 });
 
 gulp.task("symbols", function() {
-  return gulp.src("build/img/icons/*.svg")
+  return gulp.src("build/img/*.svg")
     .pipe(svgmin())
     .pipe(svgstore({
       inlineSvg: true
@@ -79,15 +79,10 @@ gulp.task("html:update", ["html:copy"], function(done) {
 
 gulp.task("serve", function() {
   server.init({
-    server: "/build"/*,
-    notify: false,
-    open: true,
-    cors: true,
-    ui: false*/
+    server: "build"
   });
 
   gulp.watch("less/**/*.less", ["style"]);
-  /*gulp.watch("*.html").on("change", server.reload);*/
   gulp.watch("*.html", ["html:update"]);
 });
 
