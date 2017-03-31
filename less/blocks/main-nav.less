@@ -5,7 +5,7 @@
   top: 0;
   z-index: 20;
   @media @desktop-widths {
-    height: 110px;
+    min-height: 110px;
     display: flex;
     align-items: center;
     background-color: fade(@text-color-black, 30);
@@ -36,12 +36,12 @@
   }
 
   &--opened + .page-header {
-    min-height: 664px;
-    background-position: left 107px, 50% -70px;
-    background-size: auto 288px, auto 462px;
+    min-height: 665px;
+    background-position: 50% -70px;
+    background-size: auto 465px;
 
-    .downloads {
-      padding-top: 421px;
+    .downloads__image {
+      min-height: 395px;
       @media @desktop-widths {
         padding-top: 0;
       }
@@ -66,10 +66,10 @@
 @media @tablet-widths {
   .main-nav--opened + .page-header--index {
     min-height: 617px;
-    background-position: 0px 72px, -250px -110px;
+    background-position: 50% 72px, -250px -110px;
     background-size: auto 547px, auto 728px;
     .downloads {
-      top: -330px;
+      padding-top: 65px;
     }
   }
   .main-nav--opened + .page-header--page {
@@ -83,11 +83,11 @@
 @media @desktop-widths {
   .main-nav--opened + .page-header--index {
     min-height: 853px;
-    background-position: 98% bottom, center;
+    background-position: 98% bottom, top center;
     background-size: auto 646px, auto 856px;
     .downloads {
-      position: absolute;
-      top: 218px;
+      max-width: 1020px;
+      padding-top: 192px;
     }
   }
   .main-nav--opened + .page-header--page {
@@ -152,6 +152,7 @@
   width: 100%;
   @media @desktop-widths {
     max-width: 960px;
+    min-height: 65px;
     margin: 0 auto;
   }
 }
@@ -192,12 +193,12 @@
   background-color: @bg-color-nav;
   border-bottom: 1px solid #000000;
   @media @desktop-widths {
-    max-width: 625px;
+    max-width: 632px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
+    align-content: space-between;
     margin-left: auto;
-    margin-right: 8px;
-    margin-top: -14px;
     border: none;
     background-color: transparent;
   }
@@ -252,7 +253,7 @@
     }
   }
   @media @desktop-widths {
-    margin-right: 81px;
+    margin-right: 9px;
     box-shadow: none;
     white-space: nowrap;
   }

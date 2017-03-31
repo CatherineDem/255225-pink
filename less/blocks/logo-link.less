@@ -17,17 +17,16 @@
 
 .logo-link__icon {
   fill: #ffffff;
-  vertical-align: baseline;
   &--mobile {
     display: none;
     @media @mobile-widths-only {
-      display: inline-block;
+      display: block;
     }
   }
   &--tablet {
     display: none;
     @media @tablet-widths {
-      display: inline-block;
+      display: block;
     }
     @media @desktop-widths {
       display: none;
@@ -36,7 +35,7 @@
   &--desktop {
     display: none;
     @media @desktop-widths {
-      display: inline-block;
+      display: block;
     }
   }
   &:hover {
